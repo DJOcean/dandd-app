@@ -1,0 +1,13 @@
+{
+  "name": "cit",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": ">1.2.18",
+    "angular-animate": ">1.2.18",
+    "angular-resource": ">1.2.18",
+    "angular-ui-router": ">0.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": ">1.2.18"
+  }
+}

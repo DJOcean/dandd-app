@@ -1,0 +1,207 @@
+.resume-page-wrapper {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  border: solid 1px #000;
+}
+
+.bio-summary {
+  color: #999;
+  font-weight: 200;
+  font-size: .9em;
+  margin: 40px 0;
+}
+
+.bio-skills-list {
+  article {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+    padding: 0 2%;
+    min-width: 28%;
+    min-height: 350px;
+    border: dashed #ccc 1px;
+    border-radius: 14px;
+    margin-bottom: 4px;
+    position: relative;
+  }
+
+  p {
+    color: $blue;
+    font-size: 1.4em;
+    text-align: center;
+    border-bottom: solid 2px;
+    padding-bottom: 5px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin: 5px 0;
+
+    i {
+      color: #000;
+      font-size: 26px;
+    }
+
+    .fa-star {
+      cursor: pointer;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    }
+
+    .filled-star {
+      color: $yellow;
+    }
+
+    .empty-star {
+      color: #fff;
+    }
+  }
+
+  div {
+    text-align: center;
+  }
+}
+
+.work-experience-wrapper {
+  margin-top: 50px;
+  border: dashed 1px #ccc;
+  border-radius: 15px;
+  width: 94%;
+  padding: 20px;
+
+  h1 {
+    color: $blue;
+    font-size: 1.4em;
+    text-align: left;
+    border-bottom: solid 2px;
+    padding-bottom: 5px;
+    font-weight: 400;
+  }
+
+  article {
+    margin: 26px 0 40px;
+  }
+
+  p {
+    font-weight: 200;
+  }
+
+  summary {
+    cursor: pointer;
+    outline: none;
+  }
+
+  header {
+    display: inline;
+    padding: 15px 0;
+    width: 100%;
+
+    h1 {
+      border: 0;
+      display: inline-block;
+      font-weight: 200;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      display: inline-block;
+      font-size: 1.6em;
+
+      i {
+        font-size: .8em;
+        width: 30px;
+        text-align: center;
+      }
+    }
+  }
+
+  .logo {
+    max-height: 50px;
+    display: none;
+  }
+}
+
+.testimonials-wrapper {
+  margin-top: 50px;
+  border: dashed 1px #ccc;
+  border-radius: 15px;
+  width: 94%;
+  padding: 20px;
+
+  h1 {
+    color: $blue;
+    font-size: 1.4em;
+    text-align: left;
+    border-bottom: solid 2px;
+    padding-bottom: 5px;
+  }
+
+  article {
+    margin: 40px 0;
+
+    h1 {
+      border: 0;
+      color: $dark-gray;
+      display: inline-block;
+      margin: 0;
+
+      i {
+        font-size: .8em;
+      }
+    }
+
+    h2 {
+      color: lighten($dark-gray, 20%);
+      display: inline-block;
+      margin: 0;
+      font-size: 1em;
+      font-weight: 200;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 0 20px 10px 0;
+      border-radius: 50px;
+    }
+  }
+}
+
+.barchart-wrapper {
+  width: 50%;
+  background: -webkit-linear-gradient(#ccc, #999); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccc, #999); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccc, #999); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccc, #999); /* Standard syntax */
+  box-shadow: 2px 2px 5px #444;
+  height: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  margin-right: 10px;
+
+  div {
+    background: -webkit-linear-gradient($green, darken($green, 20%)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($green, darken($green, 20%)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($green, darken($green, 20%)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($green, darken($green, 20%)); /* Standard syntax */
+    box-shadow: 1px 0 2px darken($green, 40%);
+    height: 26px;
+    border-radius: 5px;
+    text-align: right;
+
+    i {
+      color: lighten($green, 20%);
+      margin-right: 3px;
+      font-size: 12px;
+    }
+  }
+}
