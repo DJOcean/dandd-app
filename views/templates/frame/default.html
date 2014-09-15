@@ -1,6 +1,6 @@
-<!--<div ng-include src="'/templates/navigation/nav.html'"></div>-->
+<div ng-include src="'/templates/navigation/nav.html'"></div>
 
-<div class="background-image-wrapper">
+<div class="background-image-wrapper day-time">
 	<div class="cloud-box-wrapper" style="left: 250px;top: 100px;opacity: .3;">
 		<div class="cloud-box">
 		  <div></div>
@@ -34,8 +34,14 @@
 		  <div></div></div>
 	</div>
 
-	<div class="sun-box-wrapper" style="right: -400px;top: -400px;">
+	<div class="sun-box-wrapper" style="left: 100px;top: 100px;">
 		<div class="sun-box">
+		  <div></div>
+		</div>
+	</div>
+
+	<div class="moon-box-wrapper" style="left: 700px;top: 100px;">
+		<div class="moon-box">
 		  <div></div>
 		</div>
 	</div>
@@ -76,4 +82,4 @@
 
 <div ui-view></div>
 
-<div ng-include src="'/templates/navigation/footer.html'"></div>
+<div ng-include src="'/templates/navigation/footer.html'" class="day-time"></div>

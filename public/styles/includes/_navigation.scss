@@ -47,11 +47,6 @@ nav {
 }
 
 footer {
-  background: -webkit-linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* Standard syntax */
-  box-shadow: 0 -1px 6px darken($footer-color, 15%);
   margin-top: 150px;
   min-height: 50px;
   position: absolute;
