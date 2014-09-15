@@ -2,12 +2,35 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  //overflow: hidden;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: -webkit-linear-gradient($blue, #fff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient($blue, #fff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient($blue, #fff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient($blue, #fff); /* Standard syntax */
+  height: 100%;
+}
+
+.default-page-wrapper {
+  max-width: 50em;
+  width: 100%;
+  margin: 100px auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px darken($background-color,40%);
+  border-radius: 5px;
+  padding: 30px;
+  min-height: 100%;
+  position: relative;
+}
+
+.background-image-wrapper {
+  background: -webkit-linear-gradient($background-color, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($background-color, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($background-color, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($background-color, #fff); /* Standard syntax */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
 }

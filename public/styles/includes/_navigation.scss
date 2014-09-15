@@ -1,52 +1,61 @@
-.main-navigation {
-  header {
-    width: 100%;
+nav {
+  background: -webkit-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* Standard syntax */
+  box-shadow: 0 3px 5px;
+  position: relative;
+  z-index: 9000;
+  width: 100%;
 
-    h1 {
-      font-size: 3.5em;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    h2 {
-      color: $dark-gray;
-      margin: 0;
-      text-transform: uppercase;
-    }
-  }
-
-  nav {
-    float: right;
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+  ul {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    font-size: 36px;
+    margin: 0;
+    top: 9px;
 
     li {
-      border-bottom: 3px solid #fff;
-      border-radius: 10px;
+      color: darken($nav-color, 50%);
       cursor: pointer;
       display: inline-block;
-      padding: 10px;
-      text-align: center;
-      width: 100px;
+      padding: 0 30px;
     }
 
     li:hover {
-      border-bottom: 3px solid #ddd;
+      background-color: $nav-color;
+      border-radius: 3px;
+      box-shadow: 2px 2px 2px darken($nav-color, 50%);
     }
 
-    i {
-      color: $blue;
-      font-size: 3em;
-      width: 100%;
-    }
-
-    a {
-      text-decoration: none;
-      color: $dark-gray;
+    li:last-child {
+      border: 0;
     }
   }
+
+  header {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 15px 0 15px 30px;
+
+    h1 {
+      color: darken($nav-color, 40%);
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  background: -webkit-linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lighten($footer-color, 10%), darken($footer-color, 15%)); /* Standard syntax */
+  box-shadow: 0 -1px 6px darken($footer-color, 15%);
+  margin-top: 150px;
+  min-height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
 }
