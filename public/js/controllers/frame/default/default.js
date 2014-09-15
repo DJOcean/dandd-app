@@ -17,31 +17,48 @@ angular.module('personal.default', [
 
   })
   .controller('defaultCtrl', function($scope, $location){
-    var newLeft = -200;
-    var newBottom = -100;
-    var returning = null;
-
-    console.log(window.innerHeight);
-
+    $scope.sunsOut = true;
     var t = 0;
 
-    function moveit() {
+    // http://jsfiddle.net/W69s6/20/
+    function moveSun() {
         t += 0.05;
-        var r = window.innerWidth/2;
-        var xcenter = window.innerWidth/2;
-        var ycenter = window.innerWidth/2;
+        var r = (window.innerWidth + $('#sunbox').width()/2)/2;
+        var xcenter = (window.innerWidth)/2 - $('#sunbox').width()/2;
+        var ycenter = (window.innerWidth)/2;
         var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
         var newTop = Math.floor(ycenter + (r * Math.sin(t)));
         $('#sunbox').animate({
             top: newTop,
             left: newLeft,
-        }, 100, function() {
-            moveit();
+        }, 50, function() {
+          moveSun();
         });
-    }
+    };
+
+
+    function moveMoon() {
+        t += 0.05;
+        var r = (window.innerWidth)/2 + $('#moonbox').width()/2;
+        var xcenter = (window.innerWidth)/2 - $('#moonbox').width()/2;
+        var ycenter = window.innerHeight;
+        var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+        var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+        $('#moonbox').animate({
+            top: newTop,
+            left: newLeft,
+        }, 50, function() {
+            moveMoon();
+        });
+    };
+
+    $scope.switchTimeOfDay = function() {
+      $scope.sunsOut = !$scope.sunsOut;
+    };
 
     $(document).ready(function() {
-      moveit();
+      moveSun();
+      moveMoon();
     });
 
   });

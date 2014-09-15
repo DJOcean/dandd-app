@@ -234,7 +234,7 @@
   }
 }
 
-.day-time {
+.daytime {
   background: -webkit-linear-gradient($day-background-color, #fff); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient($day-background-color, #fff); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient($day-background-color, #fff); /* For Firefox 3.6 to 15 */
@@ -295,7 +295,7 @@
   }
 }
 
-.night-time {
+.nighttime {
   background: -webkit-linear-gradient($night-background-color, darken($night-background-color, 30%)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient($night-background-color, darken($night-background-color, 30%)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient($night-background-color, darken($night-background-color, 30%)); /* For Firefox 3.6 to 15 */

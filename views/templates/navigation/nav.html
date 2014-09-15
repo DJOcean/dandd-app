@@ -4,5 +4,7 @@
   </header>
   <ul>
     <li><i class="fa fa-rss"></i></li>
+    <li ng-hide="sunsOut" ng-click="switchTimeOfDay()"><i class="fa fa-sun-o"></i></li>
+    <li ng-show="sunsOut" ng-click="switchTimeOfDay()"><i class="fa fa-moon-o"></i></li>
   </ul>
 </nav>
