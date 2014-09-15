@@ -119,7 +119,7 @@
 }
 
 .cactus-box-wrapper {
-  position: absolute;
+  position: fixed;
   z-index: +10;
 
   .cactus-box {
@@ -211,7 +211,7 @@
 }
 
 .mountain-box-wrapper {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   bottom: -30px;
 
