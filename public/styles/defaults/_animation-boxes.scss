@@ -89,8 +89,8 @@
 
 .cactus-box-wrapper {
   position: absolute;
-  z-index: +1;
-  
+  z-index: +10;
+
   .cactus-box {
     position: relative;
     height: 300px;
@@ -198,7 +198,8 @@
 
 .mountain-box-wrapper {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
+  bottom: -30px;
 
   .mountain-box {
     width: 100%;

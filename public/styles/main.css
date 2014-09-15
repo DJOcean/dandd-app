@@ -109,7 +109,7 @@ body {
 
 .cactus-box-wrapper {
   position: absolute;
-  z-index: +1; }
+  z-index: +10; }
   .cactus-box-wrapper .cactus-box {
     position: relative;
     height: 300px;
@@ -209,7 +209,8 @@ body {
 
 .mountain-box-wrapper {
   position: absolute;
-  z-index: -1; }
+  z-index: 1;
+  bottom: -30px; }
   .mountain-box-wrapper .mountain-box {
     width: 100%;
     height: 100px;
@@ -293,7 +294,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 0; }
+  z-index: +2; }
 
 .main-home-wrapper img {
   display: inline-block;
