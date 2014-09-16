@@ -2,7 +2,8 @@
   <h1><i class="fa fa-chevron-circle-right"></i>Hello. My name is Stephen.</h1> 
   <h2>I’m an experienced UX/UI Developer with a passion for creating beautiful websites for companies and individuals.</h2>
   <div class="button-wrapper">
-    <button class="button-brand button-primary" ng-click="curPage='skills'">see skills</button>
+    <button class="button-brand button-blue" ng-click="curPage='skills'">skills</button>
+    <button class="button-brand button-blue" ng-click="curPage='vsnap'">experience</button>
   </div>
 </div>
 
@@ -30,7 +31,7 @@
 <div class="main-home-wrapper default-page-wrapper" ng-show="page('vsnap')">
   <div class="work-wrapper">
     <header>
-      <h1>Vsnap, Inc.</h1>
+      <h1>Vsnap, Inc.<a href="http://www.vsnap.com"><i class="fa fa-external-link"></i></a></h1>
     </header>
     <div class="vsnap-work-img-div"></div>
     <h2>Junior UX/UI Developer <span>- May 2014 to present</span></h2> 
@@ -52,7 +53,7 @@
     <p class="side-note">I was also very lucky to have built a life-size Doctor Who TARDIS to be a quiet space for recording vsnaps and to take phone calls.</p>
   </div>
   <div class="button-wrapper">
-    <button class="button-brand button-primary" ng-click="curPage='pica'">see more work</button>
+    <button class="button-brand button-primary" ng-click="curPage='pica'">continue</button>
   </div>
 </div>
 
@@ -86,6 +87,7 @@
     </ul>    
   </div>
   <div class="button-wrapper">
+    <button class="button-brand button-primary" ng-click="curPage='vsnap'">back</button>
     <button class="button-brand button-primary" ng-click="curPage='home'">see more work</button>
   </div>
 </div>

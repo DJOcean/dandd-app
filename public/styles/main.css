@@ -7,6 +7,10 @@
     width: 20px;
     text-align: middle; }
 
+.button-blue {
+  border: solid 2px #0f70bf;
+  background-color: #73baf4; }
+
 body, html {
   margin: 0;
   padding: 0;
@@ -414,6 +418,40 @@ footer {
   width: 100%;
   z-index: +2; }
 
+.background-settings-list {
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  z-index: 8000;
+  right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 2px 3px 5px;
+  min-width: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .background-settings-list .selected {
+    background-color: #16a808; }
+    .background-settings-list .selected i {
+      color: #ddd;
+      font-size: 21px; }
+  .background-settings-list li {
+    background-color: #062e02; }
+  .background-settings-list li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom: solid #ccc 2px;
+    padding: 10px; }
+  .background-settings-list li:last-child {
+    border-bottom-left-radius: 20px;
+    padding: 10px; }
+  .background-settings-list i {
+    color: #094703;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle; }
+
 .work-wrapper {
   width: 100%; }
   .work-wrapper .vsnap-work-img-div {
@@ -434,6 +472,11 @@ footer {
   .work-wrapper h1 {
     display: inline-block;
     margin: 0; }
+    .work-wrapper h1 .fa-external-link {
+      color: #0f70bf;
+      width: 50px;
+      text-align: right;
+      font-size: 18px; }
   .work-wrapper h2 {
     display: inline-block;
     margin: 10px 0;

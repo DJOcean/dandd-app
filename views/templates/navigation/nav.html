@@ -3,8 +3,16 @@
     <h1 ui-sref="default.home">Front End UX/UI Developer</h1>
   </header>
   <ul>
-    <li><i class="fa fa-rss"></i></li>
-    <li ng-hide="sunsOut" ng-click="switchTimeOfDay()"><i class="fa fa-sun-o"></i></li>
-    <li ng-show="sunsOut" ng-click="switchTimeOfDay()"><i class="fa fa-moon-o"></i></li>
+  	<li ui-sref="default.home"><i class="fa fa-home"></i></li>
+  	<li ui-sref="default.contact"><i class="fa fa-envelope"></i></li>
+    <li ui-sref="default.blog"><i class="fa fa-rss"></i></li>
   </ul>
 </nav>
+
+<ul class="background-settings-list">
+  <li ng-class="{'selected': sunsOut === true}"><i ng-click="switchTimeOfDay()" class="fa fa-sun-o"></i></li>
+  <li ng-class="{'selected': sunsOut === false}"><i ng-click="switchTimeOfDay()" class="fa fa-moon-o"></i></li>
+</ul>
+
+
+

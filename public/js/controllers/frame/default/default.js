@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('personal.default', [
-  'personal.home'
+  'personal.home',
+  'personal.contact',
+  'personal.blog'
 ])
 
   .config(function($stateProvider, $urlRouterProvider, $locationProvider){

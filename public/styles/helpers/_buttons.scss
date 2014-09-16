@@ -10,5 +10,7 @@
   }
 }
 
-.button-primary {
+.button-blue {
+	border: solid 2px $blue;
+	background-color: lighten($blue, 30%);
 }

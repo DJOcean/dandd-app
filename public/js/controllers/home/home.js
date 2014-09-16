@@ -9,16 +9,16 @@ angular.module('personal.home', [
       .state('default.home',{
         url: '/',
         templateUrl: 'templates/home/home.html',
-        controller: 'homeCtrl'
+        controller: 'HomeCtrl'
       });
 
     $urlRouterProvider.when('', '/');
     $locationProvider.html5Mode(true);
 
   })
-  .controller('homeCtrl', function($scope, $location){ 
+  .controller('HomeCtrl', function($scope, $location){ 
 
-    $scope.curPage = 'vsnap';
+    $scope.curPage = 'home';
 
     $scope.imageCollection = {
       'vsnapMockup' : {

@@ -55,3 +55,50 @@ footer {
   width: 100%;
   z-index: +2;
 }
+
+.background-settings-list {
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  z-index: 8000;
+  right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 2px 3px 5px;
+  min-width: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .selected {
+    background-color: $green;
+
+    i {
+      color: #ddd;
+      font-size: 21px;
+    }
+  }
+
+  li {
+    background-color: darken($green, 25%);
+  }
+
+  li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom: solid #ccc 2px;
+    padding: 10px;
+  }
+
+  li:last-child {
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+  }
+
+  i {
+    color: darken($green, 20%);
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
