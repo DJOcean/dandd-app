@@ -21,7 +21,7 @@ angular.module('personal.default', [
     var t = 0;
 
     // http://jsfiddle.net/W69s6/20/
-    function moveSun() {
+    function moveSun(speed) {
         t += 0.05;
         var r = (window.innerWidth + $('#sunbox').width()/2)/2;
         var xcenter = (window.innerWidth)/2 - $('#sunbox').width()/2;
@@ -31,13 +31,13 @@ angular.module('personal.default', [
         $('#sunbox').animate({
             top: newTop,
             left: newLeft,
-        }, 50, function() {
+        }, speed, function() {
           moveSun();
         });
     };
 
 
-    function moveMoon() {
+    function moveMoon(speed) {
         t += 0.05;
         var r = (window.innerWidth)/2 + $('#moonbox').width()/2;
         var xcenter = (window.innerWidth)/2 - $('#moonbox').width()/2;
@@ -47,7 +47,7 @@ angular.module('personal.default', [
         $('#moonbox').animate({
             top: newTop,
             left: newLeft,
-        }, 50, function() {
+        }, speed, function() {
             moveMoon();
         });
     };
@@ -57,8 +57,8 @@ angular.module('personal.default', [
     };
 
     $(document).ready(function() {
-      moveSun();
-      moveMoon();
+      moveSun(100);
+      moveMoon(100);
     });
 
   });

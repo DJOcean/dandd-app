@@ -4,8 +4,9 @@ nav {
   background: -moz-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* Standard syntax */
   box-shadow: 0 3px 5px;
-  position: relative;
-  z-index: 9000;
+  position: fixed;
+  top: 0;
+  z-index: 3;
   width: 100%;
 
   ul {

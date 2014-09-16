@@ -34,9 +34,10 @@ div {
   padding: 40px 60px 50px;
   position: relative;
   max-height: 60%;
-  box-shadow: 10px 10px 34px; }
+  box-shadow: 10px 10px 34px;
+  z-index: 4; }
   .default-page-wrapper h1 {
-    color: #754c05;
+    color: #0f70bf;
     font-weight: 200; }
     .default-page-wrapper h1 i {
       width: 40px; }
@@ -49,7 +50,7 @@ div {
     text-align: center; }
 
 .background-image-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -363,7 +364,7 @@ div {
 
 .height-keeper {
   width: 100%;
-  min-height: 600px; }
+  min-height: 100%; }
 
 nav {
   background: -webkit-linear-gradient(#f9d36b, #dca409);
@@ -375,8 +376,9 @@ nav {
   background: linear-gradient(#f9d36b, #dca409);
   /* Standard syntax */
   box-shadow: 0 3px 5px;
-  position: relative;
-  z-index: 9000;
+  position: fixed;
+  top: 0;
+  z-index: 3;
   width: 100%; }
   nav ul {
     display: inline-block;
@@ -412,20 +414,55 @@ footer {
   width: 100%;
   z-index: +2; }
 
-.main-home-wrapper {
-  background: #f4f7f9;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f4f7f9 0%, #9e6022 0%, #bdef99 4%, #f4f7f9 13%, #f4f7f9 89%, #bdef99 97%, #9e6022 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f7f9), color-stop(0%, #9e6022), color-stop(4%, #bdef99), color-stop(13%, #f4f7f9), color-stop(89%, #f4f7f9), color-stop(97%, #bdef99), color-stop(100%, #9e6022));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f4f7f9 0%, #9e6022 0%, #bdef99 4%, #f4f7f9 13%, #f4f7f9 89%, #bdef99 97%, #9e6022 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f4f7f9 0%, #9e6022 0%, #bdef99 4%, #f4f7f9 13%, #f4f7f9 89%, #bdef99 97%, #9e6022 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f4f7f9 0%, #9e6022 0%, #bdef99 4%, #f4f7f9 13%, #f4f7f9 89%, #bdef99 97%, #9e6022 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #f4f7f9 0%, #9e6022 0%, #bdef99 4%, #f4f7f9 13%, #f4f7f9 89%, #bdef99 97%, #9e6022 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f7f9', endColorstr='#9e6022',GradientType=0 );
-  /* IE6-9 */ }
+.work-wrapper {
+  width: 100%; }
+  .work-wrapper .vsnap-work-img-div {
+    background-image: url("../assets/tardis.jpeg");
+    height: 200px;
+    width: 100%;
+    background-position: 106px 634px; }
+  .work-wrapper .pica-work-img-div {
+    background-image: url("../assets/work/pica_poster_03.jpg");
+    height: 200px;
+    width: 100%;
+    background-position: 50% 39%;
+    background-size: 100%; }
+  .work-wrapper header {
+    margin: 10px 0 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px; }
+  .work-wrapper h1 {
+    display: inline-block;
+    margin: 0; }
+  .work-wrapper h2 {
+    display: inline-block;
+    margin: 10px 0;
+    vertical-align: middle;
+    font-weight: 400; }
+    .work-wrapper h2 i {
+      text-align: left;
+      width: 30px; }
+    .work-wrapper h2 span {
+      font-style: italic;
+      font-size: 14px; }
+  .work-wrapper h3 {
+    font-weight: 200;
+    font-size: 20px; }
+  .work-wrapper li i {
+    color: #0f70bf;
+    text-align: left; }
+  .work-wrapper .side-note {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 30px; }
+  .work-wrapper .fa-eye {
+    cursor: pointer; }
+
+.image-viewer-wrapper h2 {
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+  font-weight: 200; }
+.image-viewer-wrapper img {
+  margin-left: 3%;
+  width: 94%; }

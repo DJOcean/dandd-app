@@ -1,5 +1,5 @@
 .background-image-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -342,5 +342,5 @@
 
 .height-keeper {
   width: 100%;
-  min-height: 600px;
+  min-height: 100%;
 }
