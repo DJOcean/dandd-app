@@ -45,6 +45,8 @@ div {
     font-weight: 200; }
     .default-page-wrapper h1 i {
       width: 40px; }
+    .default-page-wrapper h1 .fa-line-chart {
+      width: 50px; }
   .default-page-wrapper h2 {
     font-size: 20px;
     text-align: justify;
@@ -52,6 +54,129 @@ div {
   .default-page-wrapper .button-wrapper {
     margin: 30px 0 0;
     text-align: center; }
+  .default-page-wrapper .button-wrapper-left {
+    margin: 30px 0 0;
+    text-align: left; }
+  .default-page-wrapper .button-wrapper-right {
+    margin: 30px 0 0;
+    text-align: right; }
+  .default-page-wrapper .choice-wrapper {
+    text-align: center; }
+    .default-page-wrapper .choice-wrapper p {
+      color: #333333;
+      font-size: 21px;
+      display: inline-block;
+      width: 120px; }
+    .default-page-wrapper .choice-wrapper i {
+      cursor: pointer;
+      display: block;
+      font-size: 30px;
+      padding: 14px 0;
+      background-color: #eee;
+      border-radius: 15px;
+      color: #444;
+      box-shadow: 2px 2px 5px #333;
+      margin-bottom: 8px;
+      width: 60px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+    .default-page-wrapper .choice-wrapper i:hover {
+      background-color: #16a808;
+      box-shadow: 2px 2px 5px #333;
+      color: #fff; }
+  .default-page-wrapper .icon-wrapper {
+    text-align: center; }
+    .default-page-wrapper .icon-wrapper img {
+      box-shadow: 2px 2px 9px #333;
+      border-radius: 50%;
+      margin: 5px 8px;
+      border: solid 10px #cb8732;
+      width: 91px; }
+  .default-page-wrapper .tech-skills-wrapper {
+    height: 174px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #333333;
+    width: 100%; }
+    .default-page-wrapper .tech-skills-wrapper ul {
+      list-style: none; }
+    .default-page-wrapper .tech-skills-wrapper li {
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      width: 23%; }
+    .default-page-wrapper .tech-skills-wrapper p {
+      margin: 0 0 20px -9px;
+      padding: 0;
+      width: 100%;
+      font-size: 20px;
+      text-align: center; }
+    .default-page-wrapper .tech-skills-wrapper .chart-label-exp {
+      color: #fff;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 100%;
+      z-index: +1;
+      left: -5px;
+      top: 91px;
+      text-align: center;
+      font-size: 22px; }
+    .default-page-wrapper .tech-skills-wrapper .chart-label {
+      color: #fff;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 100%;
+      z-index: +1;
+      left: -5px;
+      top: 119px;
+      text-align: center;
+      font-size: 10px; }
+    .default-page-wrapper .tech-skills-wrapper .pieContainer {
+      height: 100px; }
+    .default-page-wrapper .tech-skills-wrapper .pieBackground {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      -moz-box-shadow: 3px 3px 8px #333;
+      -webkit-box-shadow: 3px 3px 8px #333;
+      -o-box-shadow: 3px 3px 8px #333;
+      box-shadow: 3px 3px 8px #333; }
+    .default-page-wrapper .tech-skills-wrapper .pie-green {
+      background-color: #16a808; }
+    .default-page-wrapper .tech-skills-wrapper .pie-blue {
+      background-color: #0f70bf; }
+    .default-page-wrapper .tech-skills-wrapper .pie-tan {
+      background-color: #dca409; }
+    .default-page-wrapper .tech-skills-wrapper .pie-purple {
+      background-color: #b05de8; }
+    .default-page-wrapper .tech-skills-wrapper .pie {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      clip: rect(0px, 50px, 100px, 0px); }
+    .default-page-wrapper .tech-skills-wrapper .hold {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      clip: rect(0px, 100px, 100px, 50px); }
+    .default-page-wrapper .tech-skills-wrapper #pieSlice1 .pie {
+      background-color: #333; }
 
 .background-image-wrapper {
   position: fixed;
@@ -420,7 +545,7 @@ footer {
 
 .background-settings-list {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 150px;
   z-index: 8000;
   right: 0;
@@ -465,6 +590,12 @@ footer {
     width: 100%;
     background-position: 50% 39%;
     background-size: 100%; }
+  .work-wrapper .acidotic-work-img-div {
+    background-image: url("../assets/work/acidotic_website.png");
+    height: 200px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%; }
   .work-wrapper header {
     margin: 10px 0 20px;
     border-bottom: 1px solid;
@@ -492,13 +623,14 @@ footer {
     font-weight: 200;
     font-size: 20px; }
   .work-wrapper li i {
-    color: #0f70bf;
+    color: #16a808;
     text-align: left; }
   .work-wrapper .side-note {
     font-style: italic;
     font-size: 14px;
     margin-top: 30px; }
   .work-wrapper .fa-eye {
+    color: #0f70bf;
     cursor: pointer; }
 
 .image-viewer-wrapper h2 {

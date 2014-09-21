@@ -1,6 +1,6 @@
-angular.module('personal', [
+angular.module('dnd', [
   'firebase',
-  'personal.default',])
+  'dnd.default',])
 
 .value('fbURL', 'https://picamfg.firebaseio.com/');
         

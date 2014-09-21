@@ -36,6 +36,10 @@ div {
     i {
       width: 40px;
     }
+
+    .fa-line-chart {
+      width: 50px;
+    }
   }
 
   h2 {
@@ -47,5 +51,176 @@ div {
   .button-wrapper {
     margin: 30px 0 0;
     text-align: center;
+  }
+
+  .button-wrapper-left {
+    margin: 30px 0 0;
+    text-align: left;
+  }
+
+  .button-wrapper-right {
+    margin: 30px 0 0;
+    text-align: right;
+  }
+
+  .choice-wrapper {
+    text-align: center;
+    p {
+      color: $dark-gray;
+      font-size: 21px;
+      display: inline-block;
+      width: 120px;
+    }
+
+    i {
+      cursor: pointer;
+      display: block;
+      font-size: 30px;
+      padding: 14px 0;
+      background-color: #eee;
+      border-radius: 15px;
+      color: #444;
+      box-shadow: 2px 2px 5px #333;
+      margin-bottom: 8px;
+      width: 60px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    i:hover {
+      background-color: $green;
+      box-shadow: 2px 2px 5px #333;
+      color: #fff;
+      // transform: rotateY(180deg);
+      // transition: 0.3s;
+      // transform-style: preserve-3d;
+    }
+  }
+
+  .icon-wrapper {
+    text-align: center;
+
+    img {
+      box-shadow: 2px 2px 9px #333;
+      border-radius: 50%;
+      margin: 5px 8px;
+      border: solid 10px rgb(203, 135, 50);
+      width: 91px;
+    }
+  }
+
+  .tech-skills-wrapper {
+    height: 174px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px $dark-gray;
+    width: 100%;
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      width: 23%;
+    }
+
+    p {
+      margin: 0 0 20px -9px;
+      padding: 0;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .chart-label-exp {
+      color: #fff;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 100%;
+      z-index: +1;
+      left: -5px;
+      top: 91px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .chart-label {
+      color: #fff;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 100%;
+      z-index: +1;
+      left: -5px;
+      top: 119px;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .pieContainer {
+      height: 100px;
+    }
+    
+    .pieBackground {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      -moz-box-shadow: 3px 3px 8px #333;
+      -webkit-box-shadow: 3px 3px 8px #333;
+      -o-box-shadow: 3px 3px 8px #333;
+      box-shadow: 3px 3px 8px #333;
+    } 
+
+    .pie-green {
+      background-color: $green;
+    }
+
+    .pie-blue {
+      background-color: $blue;
+    }
+
+    .pie-tan {
+      background-color: darken($tan, 15%);
+    }
+
+    .pie-purple {
+      background-color: $purple;
+    }
+
+    .pie {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      clip: rect(0px, 50px, 100px, 0px);
+     }
+
+    .hold {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      clip: rect(0px, 100px, 100px, 50px);
+    }
+
+    #pieSlice1 .pie {
+      background-color: #333;
+    }
   }
 }

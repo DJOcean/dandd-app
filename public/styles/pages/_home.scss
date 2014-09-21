@@ -18,6 +18,14 @@
     background-size: 100%;
   }
 
+  .acidotic-work-img-div {
+    background-image: url('../assets/work/acidotic_website.png');
+    height: 200px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+
   width: 100%;
   
   header {
@@ -63,7 +71,7 @@
   li {
 
     i {
-      color: $blue;
+      color: $green;
       text-align: left;
     }
   }
@@ -75,6 +83,7 @@
   }
 
   .fa-eye {
+    color: $blue;
     cursor: pointer;
   }
 }
