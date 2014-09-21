@@ -1,104 +1,20 @@
 nav {
-  background: -webkit-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(lighten($nav-color, 10%), darken($nav-color, 15%)); /* Standard syntax */
-  box-shadow: 0 3px 5px;
-  position: fixed;
-  top: 0;
-  z-index: 3;
+  background-color: $tan;
+  box-shadow: 0 2px 5px darken($tan, 30%);
+  padding: 0 20px;
   width: 100%;
 
-  ul {
+  img {
+    height: 90px;
     display: inline-block;
-    position: absolute;
-    right: 30px;
-    font-size: 36px;
-    margin: 0;
-    top: 9px;
-
-    li {
-      color: darken($nav-color, 50%);
-      cursor: pointer;
-      display: inline-block;
-      padding: 0 30px;
-    }
-
-    li:hover {
-      background-color: $nav-color;
-      border-radius: 3px;
-      box-shadow: 2px 2px 2px darken($nav-color, 50%);
-    }
-
-    li:last-child {
-      border: 0;
-    }
-  }
-
-  header {
-    display: inline-block;
-    text-transform: uppercase;
-    margin: 15px 0 15px 30px;
-
-    h1 {
-      color: darken($nav-color, 40%);
-      margin: 0;
-    }
-  }
-}
-
-footer {
-  margin-top: 150px;
-  min-height: 50px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: +2;
-}
-
-.background-settings-list {
-  cursor: pointer;
-  position: fixed;
-  top: 150px;
-  z-index: 8000;
-  right: 0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  box-shadow: 2px 3px 5px;
-  min-width: 50px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  .selected {
-    background-color: $green;
-
-    i {
-      color: #ddd;
-      font-size: 21px;
-    }
-  }
-
-  li {
-    background-color: darken($green, 25%);
-  }
-
-  li:first-child {
-    border-top-left-radius: 20px;
-    border-bottom: solid #ccc 2px;
-    padding: 10px;
-  }
-
-  li:last-child {
-    border-bottom-left-radius: 20px;
-    padding: 10px;
-  }
-
-  i {
-    color: darken($green, 20%);
-    font-size: 17px;
-    text-align: center;
-    width: 100%;
     vertical-align: middle;
+  }
+
+  p {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -6px;
   }
 }
