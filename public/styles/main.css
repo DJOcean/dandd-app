@@ -40,8 +40,14 @@ p {
   margin: 0;
   padding: 0; }
 
+input {
+  height: 35px;
+  border: solid 1px #666;
+  border-radius: 5px;
+  padding-left: 4px; }
+
 nav {
-  background-color: #b09e6b;
+  background-color: #B09E6B;
   box-shadow: 0 2px 5px #554a2d;
   padding: 0 20px;
   width: 100%; }
@@ -57,13 +63,62 @@ nav {
     top: -6px; }
 
 footer {
-  background-color: #b09e6b;
+  background-color: #B09E6B;
   box-shadow: 0 -2px 5px #554a2d;
   padding: 20px;
   width: 100%; }
+
+.character-sheet-wrapper {
+  width: 100%;
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #333;
+  padding: 30px; }
+  .character-sheet-wrapper form {
+    width: 100%; }
+    .character-sheet-wrapper form div {
+      width: 100%; }
+  .character-sheet-wrapper input[type="number"] {
+    margin: 5px;
+    width: 50px; }
+  .character-sheet-wrapper .character-abilities {
+    border: solid 1px #777;
+    margin-top: 50px;
+    padding: 10px;
+    width: 360px; }
+    .character-sheet-wrapper .character-abilities tr {
+      padding: 5px; }
+    .character-sheet-wrapper .character-abilities td {
+      border-bottom: solid 1px #ccc; }
+      .character-sheet-wrapper .character-abilities td label {
+        font-size: 12px; }
+    .character-sheet-wrapper .character-abilities td:first-child label {
+      font-size: 16px;
+      font-weight: bold; }
+    .character-sheet-wrapper .character-abilities td:nth-child(3) input {
+      background-color: #ddd; }
+    .character-sheet-wrapper .character-abilities td:last-child input {
+      background-color: #ddd; }
+  .character-sheet-wrapper .character-skills {
+    border: solid 1px #777;
+    margin-top: 50px;
+    padding: 10px;
+    width: 360px; }
+    .character-sheet-wrapper .character-skills tr {
+      padding: 5px; }
+    .character-sheet-wrapper .character-skills td {
+      border-bottom: solid 1px #ccc; }
+      .character-sheet-wrapper .character-skills td label {
+        font-size: 12px; }
 
 .main-default-wrapper {
   background-image: url("../assets/wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 1000px; }
+  min-height: 1000px;
+  padding: 70px; }
+
+/*# sourceMappingURL=main.css.map */

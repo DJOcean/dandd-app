@@ -1,1 +1,1521 @@
-char sheet
+<div class="character-sheet-wrapper">
+  <form class="traits">
+    <label>Character name:</label><input type="text" placeholder="Your character's name" id="name">
+    <label>Player:</label>
+      <input type="text" placeholder="Your name" id="txtPlayer">
+    <label>Class:</label>
+      <select id="txtCharClass">
+        <option value="bbn">Barbarian</option>
+        <option value="brd">Bard</option>
+        <option value="clr">Cleric</option>
+        <option value="drd">Druid</option>
+        <option value="ftr" selected>Fighter</option>
+        <option value="mnk">Monk</option>
+        <option value="pal">Paladin</option>
+        <option value="rgr">Ranger</option>
+        <option value="rog">Rogue</option>
+        <option value="sor">Sorcerer</option>
+        <option value="wiz">Wizard</option>
+      </select>
+    <label>Race:</label>
+      <select id="txtCharRace">
+        <option value="human" selected>Human</option>
+        <option value="drawf">Dwarf</option>
+        <option value="elf">Elf</option>
+        <option value="gnome">Gnomes</option>
+        <option value="halfelf">Half-Elf</option>
+        <option value="halforc">Half-Orc</option>
+        <option value="halfling">Halfling</option>
+      </select>
+    <label>Alignment:</label>
+      <select id="txtCharAlignment">
+        <option value="lawgood" selected>Lawful Good</option>
+        <option value="law">Lawful</option>
+        <option value="lawevil">Lawful Evil</option>
+        <option value="neutralgood">Neutral Good</option>
+        <option value="neutral">Neutral</option>
+        <option value="neutralevil" >Neutral Evil</option>
+        <option value="chaoticgood">Chaotic Good</option>
+        <option value="chaotic">Chaotic</option>
+        <option value="chaoticevil">Chaotic Evil</option>
+      </select>
+    <label>Level:</label>
+      <input type="number" placeholder="1" id="txtCharLevel">
+    <label>Deity:</label>
+      <input type="text" placeholder="Ex: Boccob..." id="txtCharDeity">
+    <label>Size:</label>
+      <select id="txtCharSize">
+        <option value="tiny">Tiny</option>
+        <option value="small">Small</option>
+        <option value="medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+    <label>Age:</label>
+      <input type="number" placeholder ="Ex: 18..." id="txtCharAge">
+    <label>Height (inches):</label>
+      <input type="number" placeholder="Ex: 72..." id="txtCharHeight">
+    <label>Weight (pounds):</label>
+      <input type="number" placeholder="Ex: 150..." id="txtCharWeight">
+    <label for="radMale">Male</label>
+      <input type="radio" name="gender" id="radMale" value="male">
+    <label for="radFemale">Female</label> 
+      <input type="radio" name="gender" id="radFemale" value="female">    
+    <label>Eyes:</label> 
+      <select id="eyes">
+        <option value="blue">Blue</option>
+        <option value="brown" selected>Brown</option>
+        <option value="red">Red</option>
+        <option value="silver">Silver</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>    
+      </select>
+    <label>Hair:</label>
+      <select id="hair">
+        <option value="blue">Blue</option>
+        <option value="brown" selected>Brown</option>
+        <option value="red">Red</option>
+        <option value="silver">Silver</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>    
+      </select>
+    <label>Skin:</label>
+      <select id="skin">
+        <option value="brown">Brown</option>
+        <option value="tan" selected>Tan</option>          
+      </select>
+  </form> 
+  <form class="character-abilities">
+    <table class="abilities">
+      <tr>
+        <td>
+          <label>Ability score</label>
+        </td>
+        <td>
+          <label>Modifier</label>
+        </td>
+        <td>
+          <label>Temp. Score</label>
+        </td>
+        <td>
+          <label>Temp. Modifier</label>
+        </td>
+      </tr>
+      </tr>
+      <tr>
+        <td>
+          <label>STR:</label>
+          <input type="number" id="txtCharStr">
+        </td>
+        <td>
+          <input type="number" id="txtCharStrMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempStr">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempStrMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>DEX:</label>
+          <input type="number" id="txtCharDex">
+        </td>
+        <td>
+          <input type="number" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempDex">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempDexMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>CON:</label>
+          <input type="number" id="txtCharCon">
+        </td>
+        <td>
+          <input type="number" id="txtCharConMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempCon">
+        </td>
+        <td>
+          <input type="number" id="txtCharempConMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>INT:</label>
+          <input type="number" id="txtCharInt">
+        </td>
+        <td>
+          <input type="number" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempInt">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempIntMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>WIS:</label>
+          <input type="number" id="txtCharWis">
+        </td>
+        <td>
+          <input type="number" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempWis">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempWisMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>CHA:</label>
+          <input type="number" id="txtCharCha">
+        </td>
+        <td>
+          <input type="number" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempCha">
+        </td>
+        <td>
+          <input type="number" id="txtCharTempChaMod">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <form class="character-stats">  
+    <label>Experience Points</label>
+    <input type="number" id="txtCharExperiencePoints">
+    <label>Spell Save:</label>
+    <input type="number" id="txtCharSpellSave">
+    <label>Base Attack:</label>
+    <input type="number" id="txtCharBaseAttack">
+    <table class="hp">
+      <tr>
+        <td>
+          <label>Total HP</label>
+          <input type="number" id="txtCharTotalHP">
+        </td>
+        <td>
+          <label>Current HP</label>
+          <input type="number" id="txtCharCurrentHP">
+        </td>
+      </tr>
+    </table>
+    <table class="ac">
+      <tr>
+        <td>
+          <label>AC =</label>
+          <input type="number" id="txtCharAC">
+        </td>
+        <td>
+          <label>10 +</label>
+        </td>
+        <td>
+          <label>Armor Bonus + </label>
+          <input type="number" id="txtCharAB">
+        </td>
+        <td>
+          <label>Sheild Bonus + </label>
+          <input type="number" id="txtCharSB">
+        </td>
+        <td>
+          <label>Dex Modifier + </label>
+          <input type="number" id="txtCharDexMod">
+        </td>
+        <td>
+          <label>Size Modifier + </label>
+          <input type="number" id="txtCharSize">
+        </td>
+        <td>
+          <label>Natural Modifier + </label>
+          <input type="number" id="txtCharNatMod">
+        </td>
+        <td>
+          <label>Misc Modifier</label>
+          <input type="number" id="txtCharACMiscMod">
+        </td>
+      </tr>
+    </table>
+    <table class="speed"
+      <tr>
+        <td>
+          <label>Speed</label>
+          <input type="number" id="txtCharSpeed">
+        </td>
+        <td>
+          <label>Arcane Spell Failure</label>
+          <input type="number" id="txtCharSpellFail">
+        </td>
+        <td>
+          <label>Armor Check Penalty</label>
+          <input type="number" id="txtCharArmorPenalty">
+        </td>
+        <td>
+          <label>Spell Resistance</label>
+          <input type="number" id="txtCharSpellResist">
+        </td>
+      </tr>
+    </table>
+    <table class="initiative">
+      <tr>
+        <td>
+          <label>Initiative = </label>
+          <input type="number" id="txtCharInitiative">
+        </td>
+        <td>
+          <label>Dex Modifier +</label>
+          <input type="number" id="txtCharDexMod">
+        </td>
+        <td>
+          <label>Misc Modifier</label>
+          <input type="number" id="txtCharInitiativeMod">
+        </td>
+      </tr>
+    </table>
+    <table class="savingthrows">
+      <tr>
+        <td>
+          <label>Saving Throws =</label>
+        </td>
+        <td>
+          <label>Total +</label>
+        </td>
+        <td>
+          <label>Base Save +</label>
+        </td>
+        <td>
+          <label>Ability Modifier +</label>
+        </td>
+        <td>
+          <label>Magic Modifier +</label>
+        </td>
+        <td>
+          <label>Misc Modifier +</label>
+        </td>
+        <td>
+          <label>Temp Modifier</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Fortitude</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharFort">
+        </td>
+        <td>
+          <input type="number" id="txtCharBaseSave">
+        </td>
+        <td>
+          <input type="number" id="txtCharConMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharFortMagMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharFortMiscMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharFortTempMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Reflex</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharRefl">
+        </td>
+        <td>
+          <input type="number" id="txtCharBaseSave">
+        </td>
+        <td>
+          <input type="number" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharReflMagMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharReflMiscMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharReflTempMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Will</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharWill">
+        </td>
+        <td>
+          <input type="number" id="txtCharBaseSave">
+        </td>
+        <td>
+          <input type="number" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharWillMagMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharWillMiscMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharWillTempMod">
+        </td>
+      </tr>
+    </table>
+    <table class="attackbonus">
+      <tr>
+        <td>
+          <label>Type</label>
+        </td>
+        <td>
+          <label>Total =</label>
+        </td>
+        <td>
+          <label>Base Attack +</label>
+        </td>
+        <td>
+          <label>Ability Mod +</label>
+        </td>
+        <td>
+          <label>Size Mod +</label>
+        </td>
+        <td>
+          <label>Misc Mod +</label>
+        </td>
+        <td>
+          <label>Temp Mod</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Melee</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharMelee">
+        </td>
+        <td>
+          <input type="number" id"txtCharBaseAttack">
+        </td>
+        <td>
+          <input type="number" id"txtCharStrMod">
+        </td>
+        <td>
+          <input type="number" id"txtCharSizeMod">
+        </td>
+        <td>
+          <input type="number" id"txtCharMeleeMiscMod">
+        </td>
+        <td>
+          <input type="number" id"txtCharMeleeTempMod">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Ranged</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharRanged">
+        </td>
+        <td>
+          <input type="number" id"txtCharBaseAttack">
+        </td>
+        <td>
+          <input type="number" id"txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id"txtCharSizeMod">
+        </td>
+        <td>
+          <input type="number" id"txtCharRangedMiscMod">
+        </td>
+        <td>
+          <input type="number" id"txtCharRangedTempMod">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <form class="character-skills">
+    <h2>Skills</h2>
+    <table>
+      <tr>
+        <td>
+          <label>Skill Name</label>
+        </td>
+        <td>
+          <label>Skill Mod =</label>
+        </td>
+        <td>
+          <label>Ability Mod +</label>
+        </td>
+        <td>
+          <label>Ranks +</label>
+        </td>
+        <td>
+          <label>Misc Mod</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Alchemy</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAlchemy">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAlchemyRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAlchemyMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Animal Empathy</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAnimalempathy">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAnimalempathyRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAnimalempathyMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Appraise</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAppraise">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAppraiseRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkAppraiseMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Balance</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkBalance">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkBalanceRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkBalanceMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Bluff</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkBluff">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkBluffRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkBluffMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Climb</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkClimb">
+        </td>
+        <td>
+          <input type="number" placeholder="Str" id="txtCharStrMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkClimbRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkClimbMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Concentration</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkConcentration">
+        </td>
+        <td>
+          <input type="number" placeholder="Con" id="txtCharConMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkConcentrationRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkConcentrationMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Craft</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkCraft">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkCraftRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkCraftMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Decipher Script</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDecipherscript">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDecipherscriptRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDecipherscriptMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Diplomacy</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDiplomacy">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDiplomacyRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDiplomacyMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Disable Device</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDisabledevice">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDisabledeviceRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDisabledeviceMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Disguise</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDisguise">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDisguiseRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkDisguiseMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Escape Artist</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkEscapeartist">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkEscapeartistRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkEscapeartistMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Forgery</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkForgery">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkForgeryRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkForgeryMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Gather Information</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkGatherinformation">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkGatherinformation">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkGatherinformation">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Handle Animal</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHandleanimal">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHandleanimal">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHandleanimal">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Heal</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHeal">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHealRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHealMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Hide</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHide">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHideRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHideMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Innuendo</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkInnuendo">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkInnuendoRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkInnuendoMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Intuit Direction</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkIntuitdirection">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkIntuitdirectionRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkIntuitdirectionMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Jump</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkJump">
+        </td>
+        <td>
+          <input type="number" placeholder="Str" id="txtCharStrMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkJumpRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkJumpMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Arcana)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkArcana">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkArcanaRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkArcanaMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Engineering)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkEngineering">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkEngineeringRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkEngineeringMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Geography)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkGeography">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkGeographyRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkGeographyMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (History)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHistory">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHistoryRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkHistoryMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Local)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkLocal">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkLocalRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkLocalMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Nature)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkNature">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkNatureRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkNatureMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Nobility)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkNobility">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkNobilityRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkNobilityMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (the Planes)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPlanes">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPlanesRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPlanesMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Knowledge (Religion)</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkReligion">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkReligionRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkReligionMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Listen</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkListen">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkListenRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkListenMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Move Silently</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkMovesilently">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkMovesilentlyRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkMovesilentlyMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Open Lock</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkOpenlock">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkOpenlockRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkOpenlockMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Perform</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPerform">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPerformRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPerformMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Pick Pocket</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPickpocket">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPickpocketRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkPickpocketMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Profession</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkProfession">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkProfessionRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkProfessionMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Read Lips</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkReadlips">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkReadlipsRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkReadlipsMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Ride</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkRide">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkRideRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkRideMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Scry</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkScry">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkScryRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkScryMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Search</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSearch">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSearchRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSearchMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Sense Motive</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSensemotive">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSensemotiveRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSensemotiveMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Spellcraft</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSpellcraft">
+        </td>
+        <td>
+          <input type="number" placeholder="Int" id="txtCharIntMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSpellcraftRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSpellcraftMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Spot</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSpot">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSpotRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSpotMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Swim</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSwim">
+        </td>
+        <td>
+          <input type="number" placeholder="Str" id="txtCharStrMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSwimRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkSwimMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tumble</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkTumble">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkTumbleRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkTumbleMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Use Magic Device</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkMagicdevice">
+        </td>
+        <td>
+          <input type="number" placeholder="Cha" id="txtCharChaMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkMagicdeviceRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkMagicdeviceMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Use Rope</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkRope">
+        </td>
+        <td>
+          <input type="number" placeholder="Dex" id="txtCharDexMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkRopeRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkRopeMisc">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Wilderness Lore</label>
+        </td>
+        <td>
+          <input type="number" id="txtCharSkWildernesslore">
+        </td>
+        <td>
+          <input type="number" placeholder="Wis" id="txtCharWisMod">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkWildernessloreRanks">
+        </td>
+        <td>
+          <input type="number" id="txtCharSkWildernessloreMisc">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <form class="character-liftload">
+    <table>
+      <tr>
+        <td>
+          <label>Light Load</label>
+          <input type="number" id="txtCharLightLoad">
+        </td>
+          <label>Medium Load</label>
+          <input type="number" id="txtCharMediumLoad">
+        </td>
+          <label>Heavy Load</label>
+          <input type="number" id="txtCharHeavyLoad">
+        </td>
+      </tr>
+      <tr>
+      <td>
+          <label>Lift Over Head</label>
+          <input type="number" id="txtCharLiftOverHead">
+        </td>
+          <label>Lift Off Ground</label>
+          <input type="number" id="txtCharLiftOffGround">
+        </td>
+          <label>Push or Drag</label>
+          <input type="number" id="txtCharPushDrag">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div class="character-feats">
+    <h2>Special Abilities/Feats</h2>
+    <p>list of feats here...</p>
+  </div>
+  <div class="character-spells">
+    <h2>Spells</h2>
+    <p>list of spells here...</p>
+    <h3>Spells per Day Chart</h3>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label>Spell Save DC</label>
+          </td>
+          <td>
+            <label>Level</label>
+          </td>
+          <td>
+            <label>Spells per Day</label>
+          </td>
+          <td>
+            <label>Bonus Spells</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(0)">
+          </td>
+          <td>
+            <label>0</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(0)">
+          </td>
+          <td>
+            <label>0</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(1)">
+          </td>
+          <td>
+            <label>1st</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(1)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(1)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(2)">
+          </td>
+          <td>
+            <label>2nd</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(2)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(2)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(3)">
+          </td>
+          <td>
+            <label>3rd</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(3)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(3)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(4)">
+          </td>
+          <td>
+            <label>4th</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(4)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(4)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(5)">
+          </td>
+          <td>
+            <label>5th</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(5)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(5)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(6)">
+          </td>
+          <td>
+            <label>6th</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(6)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(6)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(7)">
+          </td>
+          <td>
+            <label>7th</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(7)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(7)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(8)">
+          </td>
+          <td>
+            <label>8th</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(8)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(8)">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="txtCharSpellSaveDCLvl(9)">
+          </td>
+          <td>
+            <label>9th</label>
+          </td>
+          <td>
+            <input type="number" id="txtCharSpellsPerDayLvl(9)">
+          </td>
+          <td>
+            <input type="number" id="txtCharBonusSpellsLvl(9)">
+          </td>
+        </tr>
+      </table>
+    <h3>Number of Spells Known</h3>
+      <label>0</label>
+      <input type="number" id="txtCharSpellsKnownLvl(0)">
+      <label>1st</label>
+      <input type="number" id="txtCharSpellsKnownLvl(1)">
+      <label>2nd</label>
+      <input type="number" id="txtCharSpellsKnownLvl(2)">
+      <label>3rd</label>
+      <input type="number" id="txtCharSpellsKnownLvl(3)">
+      <label>4th</label>
+      <input type="number" id="txtCharSpellsKnownLvl(4)">
+      <label>5th</label>
+      <input type="number" id="txtCharSpellsKnownLvl(5)">
+      <label>6th</label>
+      <input type="number" id="txtCharSpellsKnownLvl(6)">
+      <label>7th</label>
+      <input type="number" id="txtCharSpellsKnownLvl(7)">
+      <label>8th</label>
+      <input type="number" id="txtCharSpellsKnownLvl(8)">
+      <label>9th</label>
+      <input type="number" id="txtCharSpellsKnownLvl(9)">
+    </form>
+  </div>
+  <div class="character-languages">
+    <h2>Languages</h2>
+    <p>list of languages here...</p>
+  </div>
+  <form class="character-money">
+    <h2>Money</h2>
+    <label>Copper</label>
+    <input type="number" id="txtCharCopper">
+    <label>Silver</label>
+    <input type="number" id="txtCharSilver">
+    <label>Gold</label>
+    <input type="number" id="txtCharGold">
+    <label>Platinum</label>
+    <input type="number" id="txtCharPlatinum">
+  </form>
+</div>
