@@ -18,4 +18,23 @@ angular.module('dnd.characterSheet', [
   })
   .controller('CharacterSheetCtrl', function($scope, $location){ 
 
+    $scope.CharacterInformation = {
+      traits: {
+        name: 'BeboSangre',
+        player: 'Stephen Young',
+        class: 'Fighter',
+        race: 'Human'
+      },
+      abilities: {
+        strength: {
+          score: 234
+        },
+        dexterity: {
+          score: 234
+        }
+      }
+    };
+
+    console.log($scope.CharacterInformation);
+
   });
