@@ -59,7 +59,7 @@ angular.module('dnd.characterSheet', [
       stats: {
         experience: 999999
       },
-      weapon: {
+      equipedWeapon: {
         name: 'shortsword',
         damage: 6,
         critical: ['19','20'], 
@@ -68,6 +68,69 @@ angular.module('dnd.characterSheet', [
         range: 0,
         type: 'piercing',
         size: 'small'
+      },
+      skills: {
+        alchemy: {
+          rank: 0
+        },
+        animalEmpathy: {
+          rank: 0
+        }
+      },
+      gear: [
+        {
+          weapon: {
+            name: 'shortsword',
+            damage: 6,
+            critical: ['19','20'], 
+            criticalMultiplier: 2,
+            weight: 3,
+            range: 0,
+            type: 'piercing',
+            size: 'small'
+          }
+        },
+        {
+          weapon: {
+            name: 'shortsword',
+            damage: 6,
+            critical: ['19','20'], 
+            criticalMultiplier: 2,
+            weight: 3,
+            range: 0,
+            type: 'piercing',
+            size: 'small'
+          }
+        },
+        {
+          equipment: {
+            name: 'rope',
+            length: 48
+          }
+        }
+      ],
+      feats: [
+        {
+          name: 'improve initiative',
+          desc: 'add to initiative'
+        },
+        {
+          name: 'cleave',
+          desc: 'hits two opponents'
+        }
+      ],
+      spells: [
+        {
+          name: 'magic missle',
+          desc: 'sends a magic missle'
+        }
+      ],
+      languages: ['common'],
+      money: {
+        copper: 10,
+        gold: 1,
+        silver: 10,
+        platinum: 4
       }
     };
 
