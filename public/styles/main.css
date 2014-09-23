@@ -1,15 +1,15 @@
 .button-brand {
   cursor: pointer;
-  text-transform: uppercase;
+  font-size: 13px;
   padding: 10px 20px;
-  font-size: 13px; }
+  text-transform: uppercase; }
   .button-brand i {
-    width: 20px;
-    text-align: middle; }
+    text-align: middle;
+    width: 20px; }
 
 .button-blue {
-  border: solid 2px #0f70bf;
-  background-color: #73baf4; }
+  background-color: #73bcf4;
+  border: solid 2px #0f70bf; }
 
 body, html {
   width: 100%; }
@@ -18,107 +18,86 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif; }
+  padding: 0; }
 
-div,
-nav,
-footer,
-header,
-section,
-article,
-ul,
-li {
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
+div, nav, footer, header, section, article, table, tr, td, label, form, ul, li {
   -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */ }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 p {
   margin: 0;
   padding: 0; }
 
-input {
-  height: 35px;
+input[type="number"], input[type="text"], select {
   border: solid 1px #666;
   border-radius: 5px;
+  height: 30px;
   padding-left: 4px; }
 
 nav {
-  background-color: #B09E6B;
+  background-color: #b09e6b;
   box-shadow: 0 2px 5px #554a2d;
   padding: 0 20px;
   width: 100%; }
   nav img {
-    height: 90px;
     display: inline-block;
+    height: 90px;
     vertical-align: middle; }
   nav p {
-    font-size: 24px;
     display: inline-block;
-    vertical-align: middle;
+    font-size: 24px;
     position: relative;
-    top: -6px; }
+    top: -6px;
+    vertical-align: middle; }
 
 footer {
-  background-color: #B09E6B;
+  background-color: #b09e6b;
   box-shadow: 0 -2px 5px #554a2d;
   padding: 20px;
   width: 100%; }
 
 .character-sheet-wrapper {
-  width: 100%;
-  max-width: 70em;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #333;
-  padding: 30px; }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70em;
+  width: 100%;
+  padding: 1%; }
   .character-sheet-wrapper form {
-    width: 100%; }
+    border: solid 1px #777;
+    vertical-align: top;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 100%;
+    width: auto; }
+    .character-sheet-wrapper form label {
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block; }
     .character-sheet-wrapper form div {
+      margin: 10px 0;
       width: 100%; }
-  .character-sheet-wrapper input[type="number"] {
-    margin: 5px;
-    width: 50px; }
-  .character-sheet-wrapper .character-abilities {
-    border: solid 1px #777;
-    margin-top: 50px;
-    padding: 10px;
-    width: 360px; }
-    .character-sheet-wrapper .character-abilities tr {
-      padding: 5px; }
-    .character-sheet-wrapper .character-abilities td {
-      border-bottom: solid 1px #ccc; }
-      .character-sheet-wrapper .character-abilities td label {
-        font-size: 12px; }
-    .character-sheet-wrapper .character-abilities td:first-child label {
-      font-size: 16px;
+  .character-sheet-wrapper table {
+    width: 100%; }
+  .character-sheet-wrapper tr {
+    width: 100%; }
+  .character-sheet-wrapper td {
+    max-width: 100%; }
+    .character-sheet-wrapper td p {
+      font-size: 14px;
       font-weight: bold; }
-    .character-sheet-wrapper .character-abilities td:nth-child(3) input {
-      background-color: #ddd; }
-    .character-sheet-wrapper .character-abilities td:last-child input {
-      background-color: #ddd; }
-  .character-sheet-wrapper .character-skills {
-    border: solid 1px #777;
-    margin-top: 50px;
-    padding: 10px;
-    width: 360px; }
-    .character-sheet-wrapper .character-skills tr {
-      padding: 5px; }
-    .character-sheet-wrapper .character-skills td {
-      border-bottom: solid 1px #ccc; }
-      .character-sheet-wrapper .character-skills td label {
-        font-size: 12px; }
+    .character-sheet-wrapper td input {
+      width: 100%; }
+
+.character-traits input[type="number"] {
+  width: 50px; }
 
 .main-default-wrapper {
-  background-image: url("../assets/wallpaper.jpg");
-  background-size: cover;
+  background-image: url('../assets/wallpaper.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 1000px;
   padding: 70px; }
-
-/*# sourceMappingURL=main.css.map */
