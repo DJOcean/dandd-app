@@ -20,18 +20,54 @@ angular.module('dnd.characterSheet', [
 
     $scope.CharacterInformation = {
       traits: {
-        name: 'BeboSangre',
-        player: 'Stephen Young',
-        class: 'Fighter',
-        race: 'Human'
+        name: 'aquabeef',
+        player: 'david young',
+        class: 'fighter',
+        race: 'human',
+        level: 5,
+        alignment: 'chaotic good',
+        size: 'medium',
+        age: 25,
+        height: 60,
+        weight: 150,
+        deity: 'boccob',
+        sex: 'male',
+        eyes: 'brown',
+        hair: 'brown',
+        skin: 'tan'
       },
       abilities: {
         strength: {
-          score: 234
+          score: 99
         },
         dexterity: {
-          score: 234
+          score: 99
+        },
+        constitution: {
+          score: 99
+        },
+        intelligence: {
+          score: 99
+        },
+        wisdom: {
+          score: 99
+        },
+        charisma: {
+          score: 99
         }
+      },
+      stats: {
+        experience: 999999
+      },
+      weapon: {
+        name: 'shortsword',
+        damage: 6,
+        critical: ['19','20'], 
+        criticalMultiplier: 2,
+        weight: 3,
+        range: 0,
+        type: 'piercing',
+        size: 'small'
       }
     };
 
