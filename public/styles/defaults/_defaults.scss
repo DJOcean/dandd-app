@@ -1,4 +1,5 @@
-body, html {
+body, 
+html {
   width: 100%;
 }
 
@@ -7,7 +8,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 div,
@@ -18,9 +18,10 @@ section,
 article,
 ul,
 li {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -moz-box-sizing: border-box;    // Firefox, other Gecko
+  -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+  box-sizing: border-box;         // Opera/IE 8+
+  
 }
 
 p {
@@ -29,8 +30,8 @@ p {
 }
 
 input {
-  height: 35px;
   border: solid 1px #666;
   border-radius: 5px;
+  height: 35px;
   padding-left: 4px;
 }
