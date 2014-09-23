@@ -1,16 +1,16 @@
 .button-brand {
-  cursor: pointer;
-  text-transform: uppercase;
-  padding: 10px 20px;
+  cursor: pointer;  
   font-size: 13px;
+  padding: 10px 20px;
+  text-transform: uppercase;
 
   i {
-    width: 20px;
     text-align: middle;
+    width: 20px;
   }
 }
 
-.button-blue {
-	border: solid 2px $blue;
-	background-color: lighten($blue, 30%);
+.button-blue {  
+  background-color: lighten($blue, 30%);
+  border: solid 2px $blue;  
 }
