@@ -1,109 +1,137 @@
 <div class="character-sheet-wrapper">
-  <form class="traits">
-    <label>Character name:</label><input type="text" placeholder="Your character's name" id="name">
-    <label>Player:</label>
-      <input type="text" placeholder="Your name" id="txtPlayer">
-    <label>Class:</label>
-      <select id="txtCharClass">
-        <option value="bbn">Barbarian</option>
-        <option value="brd">Bard</option>
-        <option value="clr">Cleric</option>
-        <option value="drd">Druid</option>
-        <option value="ftr" selected>Fighter</option>
-        <option value="mnk">Monk</option>
-        <option value="pal">Paladin</option>
-        <option value="rgr">Ranger</option>
-        <option value="rog">Rogue</option>
-        <option value="sor">Sorcerer</option>
-        <option value="wiz">Wizard</option>
-      </select>
-    <label>Race:</label>
-      <select id="txtCharRace">
-        <option value="human" selected>Human</option>
-        <option value="drawf">Dwarf</option>
-        <option value="elf">Elf</option>
-        <option value="gnome">Gnomes</option>
-        <option value="halfelf">Half-Elf</option>
-        <option value="halforc">Half-Orc</option>
-        <option value="halfling">Halfling</option>
-      </select>
-    <label>Alignment:</label>
-      <select id="txtCharAlignment">
-        <option value="lawgood" selected>Lawful Good</option>
-        <option value="law">Lawful</option>
-        <option value="lawevil">Lawful Evil</option>
-        <option value="neutralgood">Neutral Good</option>
-        <option value="neutral">Neutral</option>
-        <option value="neutralevil" >Neutral Evil</option>
-        <option value="chaoticgood">Chaotic Good</option>
-        <option value="chaotic">Chaotic</option>
-        <option value="chaoticevil">Chaotic Evil</option>
-      </select>
-    <label>Level:</label>
-      <input type="number" placeholder="1" id="txtCharLevel">
-    <label>Deity:</label>
-      <input type="text" placeholder="Ex: Boccob..." id="txtCharDeity">
-    <label>Size:</label>
-      <select id="txtCharSize">
-        <option value="tiny">Tiny</option>
-        <option value="small">Small</option>
-        <option value="medium" selected>Medium</option>
-        <option value="Large">Large</option>
-      </select>
-    <label>Age:</label>
-      <input type="number" placeholder ="Ex: 18..." id="txtCharAge">
-    <label>Height (inches):</label>
-      <input type="number" placeholder="Ex: 72..." id="txtCharHeight">
-    <label>Weight (pounds):</label>
-      <input type="number" placeholder="Ex: 150..." id="txtCharWeight">
-    <label for="radMale">Male</label>
-      <input type="radio" name="gender" id="radMale" value="male">
-    <label for="radFemale">Female</label> 
-      <input type="radio" name="gender" id="radFemale" value="female">    
-    <label>Eyes:</label> 
-      <select id="eyes">
-        <option value="blue">Blue</option>
-        <option value="brown" selected>Brown</option>
-        <option value="red">Red</option>
-        <option value="silver">Silver</option>
-        <option value="white">White</option>
-        <option value="black">Black</option>    
-      </select>
-    <label>Hair:</label>
-      <select id="hair">
-        <option value="blue">Blue</option>
-        <option value="brown" selected>Brown</option>
-        <option value="red">Red</option>
-        <option value="silver">Silver</option>
-        <option value="white">White</option>
-        <option value="black">Black</option>    
-      </select>
-    <label>Skin:</label>
-      <select id="skin">
-        <option value="brown">Brown</option>
-        <option value="tan" selected>Tan</option>          
-      </select>
+  <form class="character-traits">
+    <div>
+      <label>Character name:
+        <input type="text" placeholder="Your character's name" id="name">
+      </label>
+      <label>Player:
+        <input type="text" placeholder="Your name" id="txtPlayer">
+      </label>
+      <label>Class:
+        <select id="txtCharClass">
+          <option value="bbn">Barbarian</option>
+          <option value="brd">Bard</option>
+          <option value="clr">Cleric</option>
+          <option value="drd">Druid</option>
+          <option value="ftr" selected>Fighter</option>
+          <option value="mnk">Monk</option>
+          <option value="pal">Paladin</option>
+          <option value="rgr">Ranger</option>
+          <option value="rog">Rogue</option>
+          <option value="sor">Sorcerer</option>
+          <option value="wiz">Wizard</option>
+        </select>
+      </label>
+      <label>Race:
+        <select id="txtCharRace">
+          <option value="human" selected>Human</option>
+          <option value="drawf">Dwarf</option>
+          <option value="elf">Elf</option>
+          <option value="gnome">Gnomes</option>
+          <option value="halfelf">Half-Elf</option>
+          <option value="halforc">Half-Orc</option>
+          <option value="halfling">Halfling</option>
+        </select>
+      </label>
+      <label>Level:
+        <input type="number" placeholder="1" id="txtCharLevel">
+      </label>
+    </div>
+    <div>
+      <label>Alignment:
+        <select id="txtCharAlignment">
+          <option value="lawgood" selected>Lawful Good</option>
+          <option value="law">Lawful</option>
+          <option value="lawevil">Lawful Evil</option>
+          <option value="neutralgood">Neutral Good</option>
+          <option value="neutral">Neutral</option>
+          <option value="neutralevil" >Neutral Evil</option>
+          <option value="chaoticgood">Chaotic Good</option>
+          <option value="chaotic">Chaotic</option>
+          <option value="chaoticevil">Chaotic Evil</option>
+        </select>
+      </label>
+      <label>Size:
+        <select id="txtCharSize">
+          <option value="tiny">Tiny</option>
+          <option value="small">Small</option>
+          <option value="medium" selected>Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </label>
+      <label>Age:
+        <input type="number" id="txtCharAge">
+      </label>
+      <label>Height (inches):
+        <input type="number" id="txtCharHeight">
+      </label>
+      <label>Weight (pounds):
+        <input type="number" id="txtCharWeight">
+      </label>
+    </div>
+    <div>     
+      <label>Deity:
+        <input type="text" placeholder="Ex: Boccob..." id="txtCharDeity">
+      </label>
+      <label for="radMale">Male
+        <input type="radio" name="gender" id="radMale" value="male">
+      </label>
+      <label for="radFemale">Female 
+        <input type="radio" name="gender" id="radFemale" value="female">    
+      </label>
+      <label>Eyes: 
+        <select id="eyes">
+          <option value="blue">Blue</option>
+          <option value="brown" selected>Brown</option>
+          <option value="red">Red</option>
+          <option value="silver">Silver</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>    
+        </select>
+      </label>
+      <label>Hair:
+        <select id="hair">
+          <option value="blue">Blue</option>
+          <option value="brown" selected>Brown</option>
+          <option value="red">Red</option>
+          <option value="silver">Silver</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>    
+        </select>
+      </label>
+      <label>Skin:
+        <select id="skin">
+          <option value="brown">Brown</option>
+          <option value="tan" selected>Tan</option>          
+        </select>
+      </label>
+    </div>
   </form> 
   <form class="character-abilities">
     <table class="abilities">
       <tr>
         <td>
-          <label>Ability score</label>
+          <p>Ability</p>
         </td>
         <td>
-          <label>Modifier</label>
+          <p>Ability score</p>
         </td>
         <td>
-          <label>Temp. Score</label>
+          <p>Modifier</p>
         </td>
         <td>
-          <label>Temp. Modifier</label>
+          <p>Temp. Score</p>
+        </td>
+        <td>
+          <p>Temp. Modifier</p>
         </td>
       </tr>
       </tr>
       <tr>
         <td>
-          <label>STR:</label>
+          <p>STR:</p>
+        </td>
+        <td>
           <input type="number" id="txtCharStr">
         </td>
         <td>
@@ -118,7 +146,9 @@
       </tr>
       <tr>
         <td>
-          <label>DEX:</label>
+          <p>DEX:</p>
+        </td>
+        <td>
           <input type="number" id="txtCharDex">
         </td>
         <td>
@@ -133,7 +163,9 @@
       </tr>
       <tr>
         <td>
-          <label>CON:</label>
+          <p>CON:</p>
+        </td>
+        <td>
           <input type="number" id="txtCharCon">
         </td>
         <td>
@@ -148,7 +180,9 @@
       </tr>
       <tr>
         <td>
-          <label>INT:</label>
+          <p>INT:</p>
+        </td>
+        <td>
           <input type="number" id="txtCharInt">
         </td>
         <td>
@@ -163,7 +197,9 @@
       </tr>
       <tr>
         <td>
-          <label>WIS:</label>
+          <p>WIS:</p>
+        </td>
+        <td>
           <input type="number" id="txtCharWis">
         </td>
         <td>
@@ -178,7 +214,9 @@
       </tr>
       <tr>
         <td>
-          <label>CHA:</label>
+          <p>CHA:</p>
+        </td>
+        <td>
           <input type="number" id="txtCharCha">
         </td>
         <td>
@@ -194,92 +232,110 @@
     </table>
   </form>
   <form class="character-stats">  
-    <label>Experience Points</label>
-    <input type="number" id="txtCharExperiencePoints">
-    <label>Spell Save:</label>
-    <input type="number" id="txtCharSpellSave">
-    <label>Base Attack:</label>
-    <input type="number" id="txtCharBaseAttack">
+    <div>
+      <label>Experience Points
+        <input type="number" id="txtCharExperiencePoints">
+      </label>
+      <label>Spell Save:
+        <input type="number" id="txtCharSpellSave">
+      </label>
+      <label>Base Attack:
+        <input type="number" id="txtCharBaseAttack">
+      </label>
+    </div>
     <table class="hp">
       <tr>
         <td>
-          <label>Total HP</label>
-          <input type="number" id="txtCharTotalHP">
+          <label>Total HP
+            <input type="number" id="txtCharTotalHP">
+          </label>
         </td>
         <td>
-          <label>Current HP</label>
-          <input type="number" id="txtCharCurrentHP">
+          <label>Current HP
+            <input type="number" id="txtCharCurrentHP">
+          </label>
         </td>
       </tr>
     </table>
     <table class="ac">
       <tr>
         <td>
-          <label>AC =</label>
-          <input type="number" id="txtCharAC">
+          <label>AC = 10 +
+            <input type="number" id="txtCharAC">
+          </label>
         </td>
         <td>
-          <label>10 +</label>
+          <label>Armor Bonus + 
+            <input type="number" id="txtCharAB">
+          </label>
         </td>
         <td>
-          <label>Armor Bonus + </label>
-          <input type="number" id="txtCharAB">
+          <label>Sheild Bonus + 
+            <input type="number" id="txtCharSB">
+          </label>
         </td>
         <td>
-          <label>Sheild Bonus + </label>
-          <input type="number" id="txtCharSB">
+          <label>Dex Modifier + 
+            <input type="number" id="txtCharDexMod">
+          </label>
         </td>
         <td>
-          <label>Dex Modifier + </label>
-          <input type="number" id="txtCharDexMod">
+          <label>Size Modifier + 
+            <input type="number" id="txtCharSize">
+          </label>
         </td>
         <td>
-          <label>Size Modifier + </label>
-          <input type="number" id="txtCharSize">
+          <label>Natural Modifier + 
+            <input type="number" id="txtCharNatMod">
+          </label>
         </td>
         <td>
-          <label>Natural Modifier + </label>
-          <input type="number" id="txtCharNatMod">
-        </td>
-        <td>
-          <label>Misc Modifier</label>
-          <input type="number" id="txtCharACMiscMod">
+          <label>Misc Modifier
+            <input type="number" id="txtCharACMiscMod">
+          </label>
         </td>
       </tr>
     </table>
     <table class="speed"
       <tr>
         <td>
-          <label>Speed</label>
-          <input type="number" id="txtCharSpeed">
+          <label>Speed
+            <input type="number" id="txtCharSpeed">
+          </label>
         </td>
         <td>
-          <label>Arcane Spell Failure</label>
-          <input type="number" id="txtCharSpellFail">
+          <label>Arcane Spell Failure
+            <input type="number" id="txtCharSpellFail">
+          </label>
         </td>
         <td>
-          <label>Armor Check Penalty</label>
-          <input type="number" id="txtCharArmorPenalty">
+          <label>Armor Check Penalty
+            <input type="number" id="txtCharArmorPenalty">
+          </label>
         </td>
         <td>
-          <label>Spell Resistance</label>
-          <input type="number" id="txtCharSpellResist">
+          <label>Spell Resistance
+            <input type="number" id="txtCharSpellResist">
+          </label>
         </td>
       </tr>
     </table>
     <table class="initiative">
       <tr>
         <td>
-          <label>Initiative = </label>
-          <input type="number" id="txtCharInitiative">
+          <label>Initiative = 
+            <input type="number" id="txtCharInitiative">
+          </label>
         </td>
         <td>
-          <label>Dex Modifier +</label>
-          <input type="number" id="txtCharDexMod">
+          <label>Dex Modifier +
+            <input type="number" id="txtCharDexMod">
+          </label>
         </td>
         <td>
-          <label>Misc Modifier</label>
-          <input type="number" id="txtCharInitiativeMod">
+          <label>Misc Modifier
+            <input type="number" id="txtCharInitiativeMod">
+          </label>
         </td>
       </tr>
     </table>
@@ -451,48 +507,53 @@
   </form>
   <form class="character-weapons">
     <table>
-      <tr>  
-        <td>
-          <label>Melee Weapon</label>
-          <input typee="text" id="txtCharWeapon">
-        </td>
-        <td>
-          <label>Attack Bonus</label>
-          <input type="number" id="txtCharWeaponAttackBonus">
-        </td>
-        <td>
-          <label>Damage</label>
-          <input type="text" id="txtCharWeaponDmg">
-        </td>
-        <td>
-          <label>Critical</label>
-          <input type="text" id="txtCharWeaponCrit">
-        </td>
-        <td>
-          <label>Weight</label>
-          <input type="number" id="txtCharweaponWeight">
-        </td>
-        <td>
-          <label>Range</label>
-          <input type="text" id="txtCharWeaponRange">
-        </td>
-        <td>
-          <label>Type</label>
-          <input type="text" id="txtCharWeaponType">
-        </td>
-        <td>
-          <label>Size</label>
-          <input type="text" id="txtCharWeaponSize">
-        </td>
-        <td>
-          <label>Special Properties</label>
-          <input type="text" id="txtCharWeaponSP">
-        </td>
-      </tr>
+      <tbody>
+        <tr>  
+          <td>
+            <label>Melee Weapon</label>
+            <input typee="text" id="txtCharWeapon">
+          </td>
+          <td>
+            <label>Attack Bonus</label>
+            <input type="number" id="txtCharWeaponAttackBonus">
+          </td>
+          <td>
+            <label>Damage</label>
+            <input type="text" id="txtCharWeaponDmg">
+          </td>
+          <td>
+            <label>Critical</label>
+            <input type="text" id="txtCharWeaponCrit">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Weight</label>
+            <input type="number" id="txtCharweaponWeight">
+          </td>
+          <td>
+            <label>Range</label>
+            <input type="text" id="txtCharWeaponRange">
+          </td>
+          <td>
+            <label>Type</label>
+            <input type="text" id="txtCharWeaponType">
+          </td>
+          <td>
+            <label>Size</label>
+            <input type="text" id="txtCharWeaponSize">
+          </td>
+          <td>
+            <label>Special Properties</label>
+            <input type="text" id="txtCharWeaponSP">
+          </td>
+        </tr>
+      </tbody>
     </table>
   </form>
   <form class="character-armor">
     <table>
+      <tbody>
       <tr>  
         <td>
           <label>Armor</label>
@@ -510,6 +571,8 @@
           <label>Check Penalty</label>
           <input type="text" id="txtCharArmorCheckPen">
         </td>
+      </tr>
+      <tr>
         <td>
           <label>Weight</label>
           <input type="number" id="txtCharArmorWeight">
@@ -531,6 +594,7 @@
           <input type="text" id="txtCharArmorSP">
         </td>
       </tr>
+      </tbody>
     </table>
   </form>
   <form class="character-skills">
