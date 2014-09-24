@@ -1,6 +1,68 @@
 {
+  "races" : {
+    "human" : {
+      "language" : ["common"],
+      "size" : "medium",
+      "speed" : 30,
+      "bonus" :["+1 feat", "+4 skill points"],
+      "favoriteClasses" : [
+        "barbarian",
+        "bard",
+        "cleric",
+        "druid",
+        "fighter",
+        "monk",
+        "palidin",
+        "ranger",
+        "rogue",
+        "sorcerer",
+        "wizard"
+      ]
+    },
+    "halfling" : {
+      "language" : ["common", "halfling"]
+    },
+    "halforc" : {
+      "language" : ["common", "orc"]
+    },
+    "gnome" : {
+      "language" : ["common", "gnome"]
+    },
+    "dwarf" : {
+      "language" : ["common", "dwarven"],
+      "size" : "medium",
+      "speed" : 20,
+      "favoriteClasses" : ["fighter"],
+      "bonus" : [
+        "+2 constitution",
+        "-2 charisma",
+        "dark vision - 60 feet in dark",
+        "+2 Search Checks (while looking at stonework)",
+        "Weapon Familiarity - Dwarves may treat dwarven war axes and dwarven urgroshes as martial weapons instead of exotic weapons",
+        "Stability - +4 bonus on ability checks made to be bull-rushed or tripped",
+        "+2 saving throw against poison",
+        "+2 saving throw against spells",
+        "+1 bonus attack roll agains orcs and goblinoids",
+        "+4 dodge bonus of armor class againt giant monsters",
+        "+2 bonus to appraise relating to stone",
+        "+2 bonus to craft relating to stone or metal"
+      ]
+    },
+    "halfelf" : {
+      "language" : ["common", "elven"]
+    },
+    "elf" : {
+      "language" : ["common", "elven"]
+    }
+  },
   "classes" : {
     "barbarian" : {
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(4 + int modifier) x 4",
+        "higherLevel" : "(4 + int modifier)"
+      },
+      "hpByLevel" : "1d12",
       "level" : {
         "1" : {
           "baseAttackBonus" : 1,
@@ -958,7 +1020,20 @@
         }
       }
     },
-    "monk" : {},
+    "monk" : {
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : {
+            "armed" : 0,
+            "unarmed" : "-2/-2"
+            },
+          "fortitudeSave" : 2,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Bonus feat"
+        }  
+      }
+    },
     "paladin" : {},
     "ranger" : {},
     "rogue" : {},
