@@ -69,155 +69,200 @@ angular.module('dnd.characterSheet', [
         type: 'piercing',
         size: 'small'
       },
-      skills: {
-        alchemy: {
+      skills: [
+        {
+          name: 'alchemy',
           rank: 0
         },
-        animalEmpathy: {
+        {
+          name: 'animal empathy',
           rank: 0
         },
-        appraise: {
+        {
+          name: 'appraise',
           rank: 0
         },
-        balance: {
+        {
+          name: 'balance',
           rank: 0
         },
-        bluff: {
+        {
+          name: 'bluff',
           rank: 0
         },
-        climb: {
+        {
+          name: 'climb',
           rank: 0
         },
-        concentration: {
+        {
+          name: 'concentration',
           rank: 0
         },
-        craft: {
+        {
+          name: 'craft',
           rank: 0
         },
-        decipherScript: {
+        {
+          name: 'decipher script',
           rank: 0
         },
-        diplomacy: {
+        {
+          name: 'diplomacy',
           rank: 0
         },
-        disableDevice: {
+        {
+          name: 'disable device',
           rank: 0
         },
-        disguise: {
+        {
+          name: 'disquise',
           rank: 0
         },
-        escapeArtist: {
+        {
+          name: 'escape artist',
           rank: 0
         },
-        forgery: {
+        {
+          name: 'forgery',
           rank: 0
         },
-        gatherInformation: {
+        {
+          name: 'gather information',
           rank: 0
         },
-        handleAnimal: {
+        {
+          name: 'handle animal',
           rank: 0
         },
-        heal: {
+        {
+          name: 'heal',
           rank: 0
         },
-        hide: {
+        {
+          name: 'hide',
           rank: 0
         },
-        innuendo: {
+        {
+          name: 'innuendo',
           rank: 0
         },
-        intimidate: {
+        {
+          name: 'intuit direction',
           rank: 0
         },
-        intuitDirection: {
+        {
+          name: 'jump',
           rank: 0
         },
-        jump: {
+        {
+          name: 'knowledge arcana',
           rank: 0
         },
-        knowledgeArcana: {
+        {
+          name: 'knowledge engineering',
           rank: 0
         },
-        knowledgeEngineering: {
+        {
+          name: 'knowledge geography',
           rank: 0
         },
-        knowledgeGeography: {
+        {
+          name: 'knowledge history',
           rank: 0
         },
-        knowledgeHistory: {
+        {
+          name: 'knowledge local',
           rank: 0
         },
-        knowledgeLocal: {
+        {
+          name: 'knowledge nature',
           rank: 0
         },
-        knowledgeNature: {
+        {
+          name: 'knowledge nobility',
           rank: 0
         },
-        knowledgeNobility: {
+        {
+          name: 'knowledge planes',
           rank: 0
         },
-        knowledgePlanes: {
+        {
+          name: 'knowledge religion',
           rank: 0
         },
-        knowledgeReligion: {
+        {
+          name: 'listen',
           rank: 0
         },
-        listen: {
+        {
+          name: 'move silenty',
           rank: 0
         },
-        moveSilenty: {
+        {
+          name: 'open lock',
           rank: 0
         },
-        openLock: {
+        {
+          name: 'perform',
           rank: 0
         },
-        perform: {
+        {
+          name: 'pick pocket',
           rank: 0
         },
-        pickPocket: {
+        {
+          name: 'profession',
           rank: 0
         },
-        profession: {
+        {
+          name: 'read lips',
           rank: 0
         },
-        readLips: {
+        {
+          name: 'ride',
           rank: 0
         },
-        ride: {
+        {
+          name: 'scry',
           rank: 0
         },
-        scry: {
+        {
+          name: 'search',
           rank: 0
         },
-        search: {
+        {
+          name: 'sense motive',
           rank: 0
         },
-        senseMotive: {
+        {
+          name: 'spellcraft',
           rank: 0
         },
-        spellcraft: {
+        {
+          name: 'spot',
           rank: 0
         },
-        spot: {
+        {
+          name: 'swim',
           rank: 0
         },
-        swim: {
+        {
+          name: 'tumble',
           rank: 0
         },
-        tumble: {
+        {
+          name: 'use magic device',
           rank: 0
         },
-        useMagicDevice: {
+        {
+          name: 'use rope',
           rank: 0
         },
-        useRope: {
+        {
+          name: 'wilderness lore',
           rank: 0
-        },
-        wildernessLore: {
-          rank: 0
-        },
-      },
+        }
+      ],
       gear: [
         {
           weapon: {
