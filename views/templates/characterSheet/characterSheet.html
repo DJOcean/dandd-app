@@ -8,8 +8,8 @@
         <input type="text" placeholder="Your name" ng-model="CharacterInformation.traits.player">
       </label>
       <label>Class:
-        <select ng-model="CharacterInformation.traits.class">
-          <option value="bbn" >Barbarian</option>
+        <select ng-model="CharacterInformation.traits.charClass">
+          <option value="barbarian">Barbarian</option>
           <option value="brd">Bard</option>
           <option value="clr">Cleric</option>
           <option value="drd">Druid</option>
@@ -243,7 +243,7 @@
         <input type="number" ng-model="CharacterInformation.stats.experience">
       </label>
       <label>Base Attack:
-        <input type="number" ng-value="getBaseAttack()">
+        <input type="number" ng-model="classInfo.baseAttackBonus">
       </label>
     </div>
     <table class="hp">

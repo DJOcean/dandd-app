@@ -1,10 +1,68 @@
-[
-
+{
+  "classes" : {
+    "barbarian" : {
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 2,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Fast Movement; Rage 1"
+        },
+        "2" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 3,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Uncanny dodge 1"
+        },
+        "3" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 3,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : null
+        },
+        "4" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : "Rage 2"
+        },
+        "5" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : "Uncanny Dodge 2"
+        },
+        "6" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : ""
+        }
+      }
+    },
+    "bard" : {},
+    "cleric" : {},
+    "druid" : {},
+    "fighter" : {},
+    "monk" : {},
+    "paladin" : {},
+    "ranger" : {},
+    "rogue" : {},
+    "sorcerer" : {},
+    "wizard" : {}
+  },
+  "characters" : [
     {
-      "traits": {
+      "traits" : {
         "name" : "aquabeef",
         "player" : "david young",
-        "class" : "bbn",
+        "charClass" : "barbarian",
         "race" : "human",
         "level" : 5,
         "alignment" : "chaotic good",
@@ -289,4 +347,5 @@
         "platinum" : 4
       }
     }
-]
+  ]
+}

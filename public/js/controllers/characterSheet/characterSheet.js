@@ -16,12 +16,21 @@ angular.module('dnd.characterSheet', [
     $locationProvider.html5Mode(true);
 
   })
-  .controller('CharacterSheetCtrl', function($scope, $location, GetCharacterService){ 
-    $scope.Math = window.Math;
-    
-    $scope.getCharacter = function() {
-      $scope.CharacterInformation = GetCharacterService(0);
-    };
+  .controller('CharacterSheetCtrl', function(
+    $scope, $location, CharacterService, ClassService){ 
+      $scope.Math = window.Math;
+      $scope.CharacterInformation = {};
 
-    $scope.getCharacter();
+      $scope.getCharacter = function() {
+        CharacterService(0).$asObject().$loaded().then(function() {
+          console.log("loaded record", obj.$id, obj.someOtherKeyInData);
+        });
+      };
+
+      $scope.setBaseAttackBonus = function(obj) {
+        console.log(obj);
+        $scope.classInfo = ClassService('barbarian', 1);
+      };
+
+      $scope.getCharacter();
   });
