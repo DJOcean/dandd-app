@@ -154,6 +154,9 @@
           "feats" : "Bardic music; Bardic knowledge; Countersong; Fascinate; Inspire courage 1",
           "spellsPerDay" : {
             "level" : [2]
+          },
+          "spellsKnown" : {
+            "level" : [4]
           }
         },
         "2" : {
@@ -164,6 +167,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,0]
+          },
+          "spellsKnown" : {
+            "level" : [5,2]
           }
         },
         "3" : {
@@ -174,6 +180,9 @@
           "feats" : "Inspire competence",
           "spellsPerDay" : {
             "level" : [3,1]
+          },
+          "spellsKnown" : {
+            "level" : [6,3]
           }
         },
         "4" : {
@@ -184,6 +193,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,2,0]
+          },
+          "spellsKnown" : {
+            "level" : [6,3,2]
           }
         },
         "5" : {
@@ -194,6 +206,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,3,1]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,3]
           }
         },
         "6" : {
@@ -204,6 +219,9 @@
           "feats" : "Suggestion",
           "spellsPerDay" : {
             "level" : [3,3,2]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,2]
           }
         },
         "7" : {
@@ -214,6 +232,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,3,2,0]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,2]
           }
         },
         "8" : {
@@ -224,6 +245,9 @@
           "feats" : "Inspire courage 2",
           "spellsPerDay" : {
             "level" : [3,3,3,1]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,3]
           }
         },
         "9" : {
@@ -234,6 +258,9 @@
           "feats" : "Inspire greatness",
           "spellsPerDay" : {
             "level" : [3,3,3,2]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,3]
           }
         },
         "10" : {
@@ -244,6 +271,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,3,3,2,0]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,4,2]
           }
         },
         "11" : {
@@ -254,6 +284,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,3,3,3,1]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,4,3]
           }
         },
         "12" : {
@@ -264,6 +297,9 @@
           "feats" : "Song of freedom",
           "spellsPerDay" : {
             "level" : [3,3,3,3,2]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,4,3]
           }
         },
         "13" : {
@@ -274,6 +310,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [3,3,3,3,2,0]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,4,4,2]
           }
         },
         "14" : {
@@ -284,6 +323,9 @@
           "feats" : "Inspire courage 3",
           "spellsPerDay" : {
             "level" : [4,3,3,3,3,1]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,4,4,3]
           }
         },
         "15" : {
@@ -294,6 +336,9 @@
           "feats" : "Inspire heroics",
           "spellsPerDay" : {
             "level" : [4,4,3,3,3,2]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,4,4,4,3]
           }
         },
         "16" : {
@@ -304,6 +349,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [4,4,4,3,3,2,0]
+          },
+          "spellsKnown" : {
+            "level" : [6,5,4,4,4,4,2]
           }
         },
         "17" : {
@@ -314,6 +362,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [4,4,4,4,3,3,1]
+          },
+          "spellsKnown" : {
+            "level" : [6,5,5,4,4,4,3]
           }
         },
         "18" : {
@@ -324,6 +375,9 @@
           "feats" : "Mass suggestion",
           "spellsPerDay" : {
             "level" : [4,4,4,4,4,3,2]
+          },
+          "spellsKnown" : {
+            "level" : [6,5,5,5,4,4,3]
           }
         },
         "19" : {
@@ -334,6 +388,9 @@
           "feats" : null,
           "spellsPerDay" : {
             "level" : [4,4,4,4,4,4,3]
+          },
+          "spellsKnown" : {
+            "level" : [6,5,5,5,5,4,4]
           }
         },
         "20" : {
@@ -344,13 +401,563 @@
           "feats" : "Inspire courage 4",
           "spellsPerDay" : {
             "level" : [4,4,4,4,4,4,4]
+          },
+          "spellsKnown" : {
+            "level" : [6,5,5,5,5,5,4]
           }
         }
       }
     },
-    "cleric" : {},
-    "druid" : {},
-    "fighter" : {},
+    "cleric" : {
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : 0,
+          "fortitudeSave" : 2,
+          "reflexSave" : 0,
+          "willSave" : 2,
+          "feats" : "Turn undead",
+          "spellsPerDay" : {
+            "level" : [3,"1+1"]
+          }
+        },
+        "2" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 3,
+          "reflexSave" : 0,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,"2+1"]
+          }
+        },
+        "3" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 3,
+          "reflexSave" : 1,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,"2+1","1+1"]
+          }
+        },
+        "4" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [5,"3+1","2+1"]
+          }
+        },
+        "5" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [5,"3+1","2+1","1+1"]
+          }
+        },
+        "6" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [5,"3+1","3+1","2+1"]
+          }
+        },
+        "7" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"4-1","3+1","2+1","1+1"]
+          }
+        },
+        "8" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 6,
+          "reflexSave" : 2,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"4-1","3+1","3+1","2+1"]
+          }
+        },
+        "9" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 6,
+          "reflexSave" : 3,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"4+1","4+1","3+1","2+1","1+1"]
+          }
+        },
+        "10" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"4+1","4+1","3+1","3+1","2+1"]
+          }
+        },
+        "11" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","4+1","4+1","3+1","2+1","1+1"]
+          }
+        },
+        "12" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","4+1","4+1","4+1","3+1","2+1"]
+          }
+        },
+        "13" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","4+1","4+1","3+1","2+1","1+1"]
+          }
+        },
+        "14" : {
+          "baseAttackBonus" : "10/5",
+          "fortitudeSave" : 9,
+          "reflexSave" : 4,
+          "willSave" : 9,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","4+1","4+1","3+1","3+1","2+1"]
+          }
+        },
+        "15" : {
+          "baseAttackBonus" : "11/6/1",
+          "fortitudeSave" : 9,
+          "reflexSave" : 5,
+          "willSave" : 9,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","5+1","4+1","4+1","3+1","2+1","1+1"]
+          }
+        },
+        "16" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","5+1","4+1","4+1","3+1","3+1","2+1"]
+          }
+        },
+        "17" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","5+1","5+1","4+1","4+1","3+1","2+1","1+1"]
+          }
+        },
+        "18" : {
+          "baseAttackBonus" : "13/8/3",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","5+1","5+1","4+1","4+1","3+1","3+1","2+1"]
+          }
+        },
+        "19" : {
+          "baseAttackBonus" : "14/9/4",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","5+1","5+1","5+1","4+1","4+1","3+1","3+1"]
+          }
+        },
+        "20" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 12,
+          "reflexSave" : 6,
+          "willSave" : 12,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,"5+1","5+1","5+1","5+1","5+1","4+1","4+1","4+1","4+1"]
+          }
+        }
+      }
+    },
+    "druid" : {
+        "1" : {
+          "baseAttackBonus" : 0,
+          "fortitudeSave" : 2,
+          "reflexSave" : 0,
+          "willSave" : 2,
+          "feats" : "Animal companion; Nature sense; Wild empathy",
+          "spellsPerDay" : {
+            "level" : [3,1]
+          }
+        },
+        "2" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 3,
+          "reflexSave" : 0,
+          "willSave" : 3,
+          "feats" : "Woodland stride",
+          "spellsPerDay" : {
+            "level" : [4,2]
+          }
+        },
+        "3" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 3,
+          "reflexSave" : 1,
+          "willSave" : 3,
+          "feats" : "Trackless step",
+          "spellsPerDay" : {
+            "level" : [4,2,1]
+          }
+        },
+        "4" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : "Resist nature's lure",
+          "spellsPerDay" : {
+            "level" : [5,3,2]
+          }
+        },
+        "5" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : "Wild shape 1",
+          "spellsPerDay" : {
+            "level" : [5,3,2,1]
+          }
+        },
+        "6" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : "Wild shape 2",
+          "spellsPerDay" : {
+            "level" : [5,3,3,2]
+          }
+        },
+        "7" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : "Wild shape 3",
+          "spellsPerDay" : {
+            "level" : [6,4,3,2,1]
+          }
+        },
+        "8" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 6,
+          "reflexSave" : 2,
+          "willSave" : 6,
+          "feats" : "Wild shape large",
+          "spellsPerDay" : {
+            "level" : [6,4,3,3,2]
+          }
+        },
+        "9" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 6,
+          "reflexSave" : 3,
+          "willSave" : 6,
+          "feats" : "Venom immunity",
+          "spellsPerDay" : {
+            "level" : [6,4,4,3,2,1]
+          }
+        },
+        "10" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : "Wild shape 4",
+          "spellsPerDay" : {
+            "level" : [6,4,4,3,3,2]
+          }
+        },
+        "11" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : "Wild shape tiny",
+          "spellsPerDay" : {
+            "level" : [6,5,4,4,3,2,1]
+          }
+        },
+        "12" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : "Wild shape plant",
+          "spellsPerDay" : {
+            "level" : [6,5,4,4,3,3,2]
+          }
+        },
+        "13" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : "A thousand faces",
+          "spellsPerDay" : {
+            "level" : [6,5,5,4,4,3,2,1]
+          }
+        },
+        "14" : {
+          "baseAttackBonus" : "10/5",
+          "fortitudeSave" : 9,
+          "reflexSave" : 4,
+          "willSave" : 9,
+          "feats" : "Wild shape 5",
+          "spellsPerDay" : {
+            "level" : [6,5,5,4,4,3,3,2]
+          }
+        },
+        "15" : {
+          "baseAttackBonus" : "11/6/1",
+          "fortitudeSave" : 9,
+          "reflexSave" : 5,
+          "willSave" : 9,
+          "feats" : "Timeless body; Wild shape huge",
+          "spellsPerDay" : {
+            "level" : [6,5,5,5,4,4,3,2,1]
+          }
+        },
+        "16" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : "Wild shape elemental 1",
+          "spellsPerDay" : {
+            "level" : [6,5,5,5,4,4,3,3,2]
+          }
+        },
+        "17" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,5,5,5,5,4,4,3,2,1]
+          }
+        },
+        "18" : {
+          "baseAttackBonus" : "13/8/3",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : "Wild shape elemental 2",
+          "spellsPerDay" : {
+            "level" : [6,5,5,5,5,4,4,3,3,2]
+          }
+        },
+        "19" : {
+          "baseAttackBonus" : "14/9/4",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,5,5,5,5,5,4,4,3,3]
+          }
+        },
+        "20" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 12,
+          "reflexSave" : 6,
+          "willSave" : 12,
+          "feats" : "Wild shape elemental 3; Huge elemental",
+          "spellsPerDay" : {
+            "level" : [6,5,5,5,5,5,4,4,4,4]
+          }
+        }
+    },
+    "fighter" : {
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 2,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Bonus feat"
+        },
+        "2" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 3,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Bonus feat"
+        },
+        "3" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 3,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : null
+        },
+        "4" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : "Bonus feat"
+        },
+        "5" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : null
+        },
+        "6" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : "Bonus feat"
+        },
+        "7" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : null
+        },
+        "8" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 6,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : "Bonus feat"
+        },
+        "9" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : null
+        },
+        "10" : {
+          "baseAttackBonus" : "10/5",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : "Bonus feat"
+        },
+        "11" : {
+          "baseAttackBonus" : "11/6/1",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : null
+        },
+        "12" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : "Bonus feat"
+        },
+        "13" : {
+          "baseAttackBonus" : "13/8/3",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : null
+        },
+        "14" : {
+          "baseAttackBonus" : "14/9/4",
+          "fortitudeSave" : 9,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : "Bonus feat"
+        },
+        "15" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 9,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : null
+        },
+        "16" : {
+          "baseAttackBonus" : "16/11/6/1",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : "Bonus feat"
+        },
+        "17" : {
+          "baseAttackBonus" : "17/12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : null
+        },
+        "18" : {
+          "baseAttackBonus" : "18/13/8/3",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Bonus feat"
+        },
+        "19" : {
+          "baseAttackBonus" : "19/14/9/4",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : null
+        },
+        "20" : {
+          "baseAttackBonus" : "20/15/10/5",
+          "fortitudeSave" : 12,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Bonus feat"
+        }
+      }
+    },
     "monk" : {},
     "paladin" : {},
     "ranger" : {},
