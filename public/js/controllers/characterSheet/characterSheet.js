@@ -17,12 +17,24 @@ angular.module('dnd.characterSheet', [
 
   })
   .controller('CharacterSheetCtrl', function($scope, $location){ 
+    $scope.Math = window.Math;
+    
+    $scope.getBaseAttack = function() {
+      console.log(var)
+      var curClass = $scope.CharacterInformation.traits.class;
+      var curLevel = $scope.CharacterInformation.traits.level;
+      /*BaseAttackService.get(curClass, curLevel)
+        .then(function(res) {
+          return res;
+        })
+      }*/
+    };
 
     $scope.CharacterInformation = {
       traits: {
         name: 'aquabeef',
         player: 'david young',
-        class: 'fighter',
+        class: 'bbn',
         race: 'human',
         level: 5,
         alignment: 'chaotic good',
@@ -31,29 +43,35 @@ angular.module('dnd.characterSheet', [
         height: 60,
         weight: 150,
         deity: 'boccob',
-        sex: 'male',
+        sex: 'female',
         eyes: 'brown',
         hair: 'brown',
         skin: 'tan'
       },
       abilities: {
         strength: {
-          score: 99
+          score: 99,
+          tempScore: null
         },
         dexterity: {
-          score: 99
+          score: 99,
+          tempScore: null
         },
         constitution: {
-          score: 99
+          score: 99,
+          tempScore: null
         },
         intelligence: {
-          score: 99
+          score: 99,
+          tempScore: null
         },
         wisdom: {
-          score: 99
+          score: 99,
+          tempScore: null
         },
         charisma: {
-          score: 99
+          score: 99,
+          tempScore: null
         }
       },
       stats: {
