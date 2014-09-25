@@ -20,13 +20,54 @@
       ]
     },
     "halfling" : {
-      "language" : ["common", "halfling"]
+      "language" : ["common", "halfling"],
+      "size" : "small",
+      "speed" : 20,
+      "favoriteClasses" : ["rogue"],
+      "bonus" : [
+        "+2 dexerity",
+        "-2 strength",
+        "+2 climb",
+        "+2 jump",
+        "+2 move silenty",
+        "+1 to all saving throws",
+        "+2 to saving throws against fear",
+        "+1 bonus on attack rolls with throwing weapons",
+        "+2 listen"
+      ]
     },
     "halforc" : {
-      "language" : ["common", "orc"]
+      "language" : ["common", "orc"],
+      "size" : "medium",
+      "speed" : 30,
+      "favoriteClasses" : ["barbarian"],
+      "bonus" : [
+        "+2 strength",
+        "-2 intelligence",
+        "-2 charisma",
+        "Dark Vision",
+        "Orc Blood"
+      ]
     },
     "gnome" : {
-      "language" : ["common", "gnome"]
+      "language" : ["common", "gnome"],
+      "size" : "small",
+      "speed" : 20,
+      "bonus" :[
+        "+2 constitution",
+        "-2 strength",
+        "Low Light Vision",
+        "Weapon Familiarity with hooked hammers",
+        "+2 Saving throw against illusions",
+        "+1 to difficulty class for all saving throws against illusion spells cast by gnomes",
+        "+1 attack roll against kobolds and goblinoids",
+        "+4 dodge bonus against giants",
+        "+2 listen",
+        "+2 craft",
+        "Speak with animals once per day",
+        "if charisma > 10; then once per day they can do dancing lights, ghost sound, and prestidigitation"
+      ],
+      "favoriteClasses" : ["bard"]
     },
     "dwarf" : {
       "language" : ["common", "dwarven"],
@@ -49,14 +90,64 @@
       ]
     },
     "halfelf" : {
-      "language" : ["common", "elven"]
+      "language" : ["common", "elven"],
+      "size" : "medium",
+      "speed" : 30,
+      "favoriteClasses" : [
+        "barbarian",
+        "bard",
+        "cleric",
+        "druid",
+        "fighter",
+        "monk",
+        "palidin",
+        "ranger",
+        "rogue",
+        "sorcerer",
+        "wizard"
+      ],
+      "bonus" : [
+        "Immunity to sleep spells",
+        "+1 saving throw against enchantment spells",
+        "Low light vision",
+        "+1 listen",
+        "+1 search",
+        "+1 spot",
+        "+2 diplomacy",
+        "+2 gather information",
+        "Elven Blood - for all effectrs related to race, a half-elf is considered an elf"
+      ]
     },
     "elf" : {
-      "language" : ["common", "elven"]
+      "language" : ["common", "elven"],
+      "size" : "medium",
+      "speed" : 30,
+      "bonus" :[
+        "+2 dexerity", 
+        "-2 constitution",
+        "immunity to magic sleep effects",
+        "+2 saving throw bonus against enchantment spells",
+        "Low Light Vision - twice as far as humans in low light",
+        "Weapon Proficiency in martial weapons",
+        "+2 Bonus to listen",
+        "+2 Bonus to search",
+        "+2 Bonus to spot"
+      ],
+      "favoriteClasses" : ["wizard"]
     }
   },
   "classes" : {
     "barbarian" : {
+      "alignment" : [
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+      ],
+      "weaponProficiency" : ["simple", "martial"],
+      "armorProficiency" : ["light", "medium", "shield (not tower)"],
       "unarmedDamage" : "1d3",
       "skillPoints" : {
         "firstLevel" : "(4 + int modifier) x 4",
@@ -207,6 +298,22 @@
       }
     },
     "bard" : {
+      "weaponProficiency" : ["simple", "longsword", "rapier", "sap", "shortsword", "shortbow", "whip"],
+      "armorProficiency" : ["light", "shield (not tower)"],
+      "alignment" : [
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+      ],
+      "hpByLevel" : "1d6",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(6 + int modifier) x 4",
+        "higherLevel" : "(6 + int modifier)"
+      },
       "level" : {
         "1" : {
           "baseAttackBonus" : 0,
@@ -471,6 +578,16 @@
       }
     },
     "cleric" : {
+      "weaponProficiency" : ["simple"],
+      "armorProficiency" : ["light", "medium", "heavy", "shield (not tower)"],
+      "favoriteWeapon" : ["Every Deity has a favorite weapon and every cleric considers it a point of pride to yeild that weapon. A cleric who choses the war-domain recieves the 'Weapon Focus Feat' related to that weapon as a bonus feat. He also recieves the appropriate matial weapon proficiency feat as a bonus feat if the weapon falls into that category."],
+      "alignment" : ["Within 1 step of his deity's; exceptions are clerics of St. Cuthbert, who may chose only between Lawful good and Lawful Neutral. A cleric may not be Neutral unless his deity's alignment is also Neutral."],
+      "hpByLevel" : "1d8",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(2 + int modifier) x 4",
+        "higherLevel" : "(2 + int modifier)"
+      },
       "level" : {
         "1" : {
           "baseAttackBonus" : 0,
@@ -675,6 +792,21 @@
       }
     },
     "druid" : {
+      "weaponProficiency" : ["clug", "dagger", "dart", "quarterstaff", "scimitar", "sickle", "short-spear", "sling", "spear", "natural attacks"],
+      "armorProficiency" : ["light", "medium", "No Metal Armor - only padded, leather or hide", "shields (only wooden) and not Tower"],
+      "alignment" : [
+        "Lawful",
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic"
+      ],
+      "hpByLevel" : "1d8",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(4 + int modifier) x 4",
+        "higherLevel" : "(4 + int modifier)"
+      },
         "1" : {
           "baseAttackBonus" : 0,
           "fortitudeSave" : 2,
@@ -877,6 +1009,25 @@
         }
     },
     "fighter" : {
+      "weaponProficiency" : ["simple", "martial"],
+      "armorProficiency" : ["light", "medium", "heavy", "Shields including Tower Shields"],
+      "alignment" : [
+        "Lawful Good",
+        "Lawful",
+        "Lawful Evil",
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+      ],
+      "hpByLevel" : "1d10",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(2 + int modifier) x 4",
+        "higherLevel" : "(2 + int modifier)"
+      },
       "level" : {
         "1" : {
           "baseAttackBonus" : 1,
@@ -1021,6 +1172,19 @@
       }
     },
     "monk" : {
+      "weaponProficiency" : ["club", "light crossbow", "heavy crossbow", "dagger", "handaxe", "javelin", "kama", "nunchaku", "quarterstaff", "sai", "shuriken", "siangham", "sling"],
+      "armorProficiency" : ["Not proficient with any armor or shields"],
+      "alignment" : [
+        "Lawful Good",
+        "Lawful",
+        "Lawful Evil"
+      ],
+      "hpByLevel" : "1d8",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(4 + int modifier) x 4",
+        "higherLevel" : "(4 + int modifier)"
+      },
       "level" : {
         "1" : {
           "baseAttackBonus" : {
