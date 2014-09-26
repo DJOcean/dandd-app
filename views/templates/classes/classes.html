@@ -7,6 +7,28 @@
     <h2>Alignment</h2>
     <ul ng-repeat="type in class.alignment">
       <li>{{type}}</li>
-    </ul></h2>
+    </ul>
+    <h2>Weapon Proficiency</h2>
+    <ul ng-repeat="type in class.weaponProficiency">
+      <li>{{type}}</li>
+    </ul>
+    <h2>Armor Proficiency</h2>
+    <ul ng-repeat="type in class.armorProficiency">
+      <li>{{type}}</li>
+    </ul>
+    <h2>unarmed damage</h2>
+    <p>{{class.unarmedDamage}}</p>
+    <h2>Skill point distribution</h2>
+    <ul ng-repeat="type in class.skillPoints">
+      <li>{{type}}</li>
+    </ul>
+    <h2>Hit Die</h2>
+    <p>{{class.hpByLevel}}</p>
+    <h2>Skill tree</h2>
+    <ul ng-repeat="type in class.level.baseAttackbonus">
+      <li>{{type}}</li>
+    </ul>
   </div>
 </div>
+
+
