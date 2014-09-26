@@ -1,6 +1,9 @@
 angular.module('dnd', [
   'firebase',
-  'dnd.default',])
+  'dnd.default',
+  'services.Character',
+  'services.class'
+ ])
 
-.value('fbURL', 'https://picamfg.firebaseio.com/');
+.value('fbURL', 'https://d-and-d.firebaseio.com/');
         

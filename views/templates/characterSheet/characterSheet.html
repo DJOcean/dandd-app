@@ -1,4 +1,5 @@
-<div class="character-sheet-wrapper">
+<div class="main-content-wrapper character-sheet-wrapper">
+  <a ui-sref="default.classes">Click for more info on classes</a>
   <form class="character-traits">
     <div>
       <label>Character name:
@@ -8,12 +9,12 @@
         <input type="text" placeholder="Your name" ng-model="CharacterInformation.traits.player">
       </label>
       <label>Class:
-        <select id="txtCharClass">
-          <option value="bbn">Barbarian</option>
+        <select ng-model="CharacterInformation.traits.charClass">
+          <option value="barbarian">Barbarian</option>
           <option value="brd">Bard</option>
           <option value="clr">Cleric</option>
           <option value="drd">Druid</option>
-          <option value="ftr" selected>Fighter</option>
+          <option value="ftr">Fighter</option>
           <option value="mnk">Monk</option>
           <option value="pal">Paladin</option>
           <option value="rgr">Ranger</option>
@@ -23,8 +24,8 @@
         </select>
       </label>
       <label>Race:
-        <select id="txtCharRace">
-          <option value="human" selected>Human</option>
+        <select ng-model="CharacterInformation.traits.race">
+          <option value="human">Human</option>
           <option value="drawf">Dwarf</option>
           <option value="elf">Elf</option>
           <option value="gnome">Gnomes</option>
@@ -39,20 +40,20 @@
     </div>
     <div>
       <label>Alignment:
-        <select id="txtCharAlignment">
-          <option value="lawgood" selected>Lawful Good</option>
+        <select ng-model="CharacterInformation.traits.alignment">
+          <option value="law good">Lawful Good</option>
           <option value="law">Lawful</option>
-          <option value="lawevil">Lawful Evil</option>
-          <option value="neutralgood">Neutral Good</option>
+          <option value="law evil">Lawful Evil</option>
+          <option value="neutral good">Neutral Good</option>
           <option value="neutral">Neutral</option>
-          <option value="neutralevil" >Neutral Evil</option>
-          <option value="chaoticgood">Chaotic Good</option>
+          <option value="neutral evil" >Neutral Evil</option>
+          <option value="chaotic good">Chaotic Good</option>
           <option value="chaotic">Chaotic</option>
-          <option value="chaoticevil">Chaotic Evil</option>
+          <option value="chaotic evil">Chaotic Evil</option>
         </select>
       </label>
       <label>Size:
-        <select id="txtCharSize">
+        <select ng-model="CharacterInformation.traits.size">
           <option value="tiny">Tiny</option>
           <option value="small">Small</option>
           <option value="medium" selected>Medium</option>
@@ -60,29 +61,29 @@
         </select>
       </label>
       <label>Age:
-        <input type="number" id="txtCharAge">
+        <input type="number" ng-model="CharacterInformation.traits.age">
       </label>
       <label>Height (inches):
-        <input type="number" id="txtCharHeight">
+        <input type="number" ng-model="CharacterInformation.traits.height">
       </label>
       <label>Weight (pounds):
-        <input type="number" id="txtCharWeight">
+        <input type="number" ng-model="CharacterInformation.traits.weight">
       </label>
     </div>
     <div>     
       <label>Deity:
-        <input type="text" placeholder="Ex: Boccob..." id="txtCharDeity">
+        <input type="text" placeholder="Ex: Boccob..." ng-model="CharacterInformation.traits.deity">
       </label>
       <label for="radMale">Male
-        <input type="radio" name="gender" id="radMale" value="male">
+        <input type="radio" name="gender" ng-model="CharacterInformation.traits.sex" value="male">
       </label>
       <label for="radFemale">Female 
-        <input type="radio" name="gender" id="radFemale" value="female">    
+        <input type="radio" name="gender" ng-model="CharacterInformation.traits.sex" value="female">    
       </label>
       <label>Eyes: 
-        <select id="eyes">
+        <select ng-model="CharacterInformation.traits.eyes">
           <option value="blue">Blue</option>
-          <option value="brown" selected>Brown</option>
+          <option value="brown">Brown</option>
           <option value="red">Red</option>
           <option value="silver">Silver</option>
           <option value="white">White</option>
@@ -90,9 +91,9 @@
         </select>
       </label>
       <label>Hair:
-        <select id="hair">
+        <select ng-model="CharacterInformation.traits.hair">
           <option value="blue">Blue</option>
-          <option value="brown" selected>Brown</option>
+          <option value="brown">Brown</option>
           <option value="red">Red</option>
           <option value="silver">Silver</option>
           <option value="white">White</option>
@@ -100,9 +101,9 @@
         </select>
       </label>
       <label>Skin:
-        <select id="skin">
+        <select ng-model="CharacterInformation.traits.skin">
           <option value="brown">Brown</option>
-          <option value="tan" selected>Tan</option>          
+          <option value="tan">Tan</option>          
         </select>
       </label>
     </div>
@@ -132,16 +133,17 @@
           <p>STR:</p>
         </td>
         <td>
-          <input type="number" id="txtCharStr">
+          <input type="number" ng-model="CharacterInformation.abilities.strength.score">
         </td>
         <td>
-          <input type="number" id="txtCharStrMod">
+          <input type="number" value="{{Math.floor((CharacterInformation.abilities.strength.score - 10)/2)}}">
         </td>
         <td>
-          <input type="number" id="txtCharTempStr">
+          <input type="number" ng-model="CharacterInformation.abilities.strength.tempScore">
         </td>
         <td>
-          <input type="number" id="txtCharTempStrMod">
+          <input type="number" ng-show="CharacterInformation.abilities.strength.tempScore" value="{{Math.floor((CharacterInformation.abilities.strength.tempScore -10)/2)}}">
+          <input type="number" ng-hide="CharacterInformation.abilities.strength.tempScore" value="">
         </td>
       </tr>
       <tr>
@@ -149,16 +151,17 @@
           <p>DEX:</p>
         </td>
         <td>
-          <input type="number" id="txtCharDex">
+          <input type="number" ng-model="CharacterInformation.abilities.dexterity.score">
         </td>
         <td>
-          <input type="number" id="txtCharDexMod">
+          <input type="number" value="{{Math.floor((CharacterInformation.abilities.dexterity.score - 10)/2)}}">
         </td>
         <td>
-          <input type="number" id="txtCharTempDex">
+          <input type="number" ng-model="CharacterInformation.abilities.dexterity.tempScore">
         </td>
         <td>
-          <input type="number" id="txtCharTempDexMod">
+          <input type="number" ng-show="CharacterInformation.abilities.dexterity.tempScore" value="{{Math.floor((CharacterInformation.abilities.dexterity.tempScore -10)/2)}}">
+          <input type="number" ng-hide="CharacterInformation.abilities.dexterity.tempScore" value="">
         </td>
       </tr>
       <tr>
@@ -166,16 +169,17 @@
           <p>CON:</p>
         </td>
         <td>
-          <input type="number" id="txtCharCon">
+          <input type="number" ng-model="CharacterInformation.abilities.constitution.score">
         </td>
         <td>
-          <input type="number" id="txtCharConMod">
+          <input type="number" value="{{Math.floor((CharacterInformation.abilities.constitution.score - 10)/2)}}">
         </td>
         <td>
-          <input type="number" id="txtCharTempCon">
+          <input type="number" ng-model="CharacterInformation.abilities.constitution.tempScore">
         </td>
         <td>
-          <input type="number" id="txtCharempConMod">
+          <input type="number" ng-show="CharacterInformation.abilities.constitution.tempScore" value="{{Math.floor((CharacterInformation.abilities.constitution.tempScore -10)/2)}}">
+          <input type="number" ng-hide="CharacterInformation.abilities.constitution.tempScore" value="">
         </td>
       </tr>
       <tr>
@@ -183,16 +187,17 @@
           <p>INT:</p>
         </td>
         <td>
-          <input type="number" id="txtCharInt">
+          <input type="number" ng-model="CharacterInformation.abilities.intelligence.score">
         </td>
         <td>
-          <input type="number" id="txtCharIntMod">
+          <input type="number" value="{{Math.floor((CharacterInformation.abilities.intelligence.score - 10)/2)}}">
         </td>
         <td>
-          <input type="number" id="txtCharTempInt">
+          <input type="number" ng-model="CharacterInformation.abilities.intelligence.tempScore">
         </td>
         <td>
-          <input type="number" id="txtCharTempIntMod">
+          <input type="number" ng-show="CharacterInformation.abilities.intelligence.tempScore" value="{{Math.floor((CharacterInformation.abilities.intelligence.tempScore -10)/2)}}">
+          <input type="number" ng-hide="CharacterInformation.abilities.intelligence.tempScore" value="">
         </td>
       </tr>
       <tr>
@@ -200,16 +205,17 @@
           <p>WIS:</p>
         </td>
         <td>
-          <input type="number" id="txtCharWis">
+          <input type="number" ng-model="CharacterInformation.abilities.wisdom.score">
         </td>
         <td>
-          <input type="number" id="txtCharWisMod">
+          <input type="number" value="{{Math.floor((CharacterInformation.abilities.wisdom.score - 10)/2)}}">
         </td>
         <td>
-          <input type="number" id="txtCharTempWis">
+          <input type="number" ng-model="CharacterInformation.abilities.wisdom.tempScore">
         </td>
         <td>
-          <input type="number" id="txtCharTempWisMod">
+          <input type="number" ng-show="CharacterInformation.abilities.wisdom.tempScore" value="{{Math.floor((CharacterInformation.abilities.wisdom.tempScore -10)/2)}}">
+          <input type="number" ng-hide="CharacterInformation.abilities.wisdom.tempScore" value="">
         </td>
       </tr>
       <tr>
@@ -217,16 +223,17 @@
           <p>CHA:</p>
         </td>
         <td>
-          <input type="number" id="txtCharCha">
+          <input type="number" ng-model="CharacterInformation.abilities.charisma.score">
         </td>
         <td>
-          <input type="number" id="txtCharChaMod">
+          <input type="number" value="{{Math.floor((CharacterInformation.abilities.charisma.score - 10)/2)}}">
         </td>
         <td>
-          <input type="number" id="txtCharTempCha">
+          <input type="number" ng-model="CharacterInformation.abilities.charisma.tempScore">
         </td>
         <td>
-          <input type="number" id="txtCharTempChaMod">
+          <input type="number" ng-show="CharacterInformation.abilities.charisma.tempScore" value="{{Math.floor((CharacterInformation.abilities.charisma.tempScore -10)/2)}}">
+          <input type="number" ng-hide="CharacterInformation.abilities.charisma.tempScore" value="">
         </td>
       </tr>
     </table>
@@ -234,13 +241,10 @@
   <form class="character-stats">  
     <div>
       <label>Experience Points
-        <input type="number" id="txtCharExperiencePoints">
-      </label>
-      <label>Spell Save:
-        <input type="number" id="txtCharSpellSave">
+        <input type="number" ng-model="CharacterInformation.stats.experience">
       </label>
       <label>Base Attack:
-        <input type="number" id="txtCharBaseAttack">
+        <input type="number" ng-model="classInfo.baseAttackBonus">
       </label>
     </div>
     <table class="hp">
@@ -1474,6 +1478,9 @@
   <div class="character-spells">
     <h2>Spells</h2>
     <p>list of spells here...</p>
+    <label>Spell Save:
+      <input type="number" id="txtCharSpellSave">
+    </label>
     <h3>Spells per Day Chart</h3>
     <form>
       <table>

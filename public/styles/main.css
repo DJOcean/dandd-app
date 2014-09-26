@@ -57,40 +57,31 @@ footer {
   padding: 20px;
   width: 100%; }
 
-.character-sheet-wrapper {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #333;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70em;
-  width: 100%;
-  padding: 1%; }
-  .character-sheet-wrapper form {
-    border: solid 1px #777;
-    vertical-align: top;
-    margin-bottom: 20px;
-    padding: 10px;
-    max-width: 100%;
-    width: auto; }
-    .character-sheet-wrapper form label {
-      font-size: 14px;
-      font-weight: bold;
-      display: inline-block; }
-    .character-sheet-wrapper form div {
-      margin: 10px 0;
-      width: 100%; }
-  .character-sheet-wrapper table {
+.character-sheet-wrapper form {
+  border: solid 1px #777;
+  vertical-align: top;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 100%;
+  width: auto; }
+  .character-sheet-wrapper form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block; }
+  .character-sheet-wrapper form div {
+    margin: 10px 0;
     width: 100%; }
-  .character-sheet-wrapper tr {
+.character-sheet-wrapper table {
+  width: 100%; }
+.character-sheet-wrapper tr {
+  width: 100%; }
+.character-sheet-wrapper td {
+  max-width: 100%; }
+  .character-sheet-wrapper td p {
+    font-size: 14px;
+    font-weight: bold; }
+  .character-sheet-wrapper td input {
     width: 100%; }
-  .character-sheet-wrapper td {
-    max-width: 100%; }
-    .character-sheet-wrapper td p {
-      font-size: 14px;
-      font-weight: bold; }
-    .character-sheet-wrapper td input {
-      width: 100%; }
 
 .character-traits input[type="number"] {
   width: 50px; }
@@ -101,3 +92,14 @@ footer {
   background-size: cover;
   min-height: 1000px;
   padding: 70px; }
+
+.main-content-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #333;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70em;
+  width: 100%;
+  padding: 1%; }
+
