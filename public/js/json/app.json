@@ -1192,17 +1192,1305 @@
             "unarmed" : "-2/-2"
             },
           "fortitudeSave" : 2,
-          "reflexSave" : 0,
-          "willSave" : 0,
-          "feats" : "Bonus feat"
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : "Bonus feat; Furry of blows; Unarmed strike",
+          "unarmoredSpeed" : 0
+        },
+        "2" : {
+          "baseAttackBonus" : {
+            "armed" : 1,
+            "unarmed" : "-1/-1"
+            },
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : "Bonus feat; Evasion; Fast movement",
+          "unarmoredSpeed" : 0
+        },
+        "3" : {
+          "baseAttackBonus" : {
+            "armed" : 2,
+            "unarmed" : "0/0"
+            },
+          "fortitudeSave" :3 ,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : "Still mind",
+          "unarmoredSpeed" : 10
+        },
+        "4" : {
+          "baseAttackBonus" : {
+            "armed" : 3,
+            "unarmed" : "+1/+1"
+            },
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : "Ki strike magic; Slow fall 20ft",
+          "unarmoredSpeed" : 10
+        },
+        "5" : {
+          "baseAttackBonus" : {
+            "armed" : 3,
+            "unarmed" : "+2/+2"
+            },
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : "Purity of body",
+          "unarmoredSpeed" : 10
+        },
+        "6" : {
+          "baseAttackBonus" : {
+            "armed" : 4,
+            "unarmed" : "+3/+3"
+            },
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : "Bonus feat; Slow fall 30ft",
+          "unarmoredSpeed" : 20
+        },
+        "7" : {
+          "baseAttackBonus" : {
+            "armed" : 5,
+            "unarmed" : "+4/+4"
+            },
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : "Wholeness of body",
+          "unarmoredSpeed" : 20
+        },
+        "8" : {
+          "baseAttackBonus" : {
+            "armed" : "6/1",
+            "unarmed" : "+5/+5/+0"
+            },
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Slow fall 40ft",
+          "unarmoredSpeed" : 20
+        },
+        "9" : {
+          "baseAttackBonus" : {
+            "armed" : "6/1",
+            "unarmed" : "+6/+6/+1"
+            },
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Improved evasion",
+          "unarmoredSpeed" : 30
+        },
+        "10" : {
+          "baseAttackBonus" : {
+            "armed" : "7/2",
+            "unarmed" : "+7/+7/+2"
+            },
+          "fortitudeSave" : 7,
+          "reflexSave" : 7,
+          "willSave" : 7,
+          "feats" : "Ki strike lawful; Slow fall 50ft",
+          "unarmoredSpeed" : 30
+        },
+        "11" : {
+          "baseAttackBonus" : {
+            "armed" : "8/3",
+            "unarmed" : "+8/+8/+8/+3"
+            },
+          "fortitudeSave" : 7,
+          "reflexSave" : 7,
+          "willSave" : 7,
+          "feats" : "Diamond body; Greater flurry",
+          "unarmoredSpeed" : 30
+        },
+        "12" : {
+          "baseAttackBonus" : {
+            "armed" : "9/4",
+            "unarmed" : "+9/+9/+9/+4"
+            },
+          "fortitudeSave" : 8,
+          "reflexSave" : 8,
+          "willSave" : 8,
+          "feats" : "Abundant step; Slow fall 60ft",
+          "unarmoredSpeed" : 40
+        },
+        "13" : {
+          "baseAttackBonus" : {
+            "armed" : "9/4",
+            "unarmed" : "+9/+9/+9/+4"
+            },
+          "fortitudeSave" : 8,
+          "reflexSave" : 8,
+          "willSave" : 8,
+          "feats" : "Diamond soul",
+          "unarmoredSpeed" : 40
+        },
+        "14" : {
+          "baseAttackBonus" : {
+            "armed" : "10/5",
+            "unarmed" : "+10/+10/+10/+10/+5"
+            },
+          "fortitudeSave" : 9,
+          "reflexSave" : 9,
+          "willSave" : 9,
+          "feats" : "Slow fall 70ft",
+          "unarmoredSpeed" : 40
+        },
+        "15" : {
+          "baseAttackBonus" : {
+            "armed" : "11/6/1",
+            "unarmed" : "+11/+11/+11/+6/+1"
+            },
+          "fortitudeSave" : 9,
+          "reflexSave" : 9,
+          "willSave" : 9,
+          "feats" : "Quivering palm",
+          "unarmoredSpeed" : 50
+        },
+        "16" : {
+          "baseAttackBonus" : {
+            "armed" : "12/7/2",
+            "unarmed" : "+12/+12/+12/+7/+2"
+            },
+          "fortitudeSave" : 10,
+          "reflexSave" : 10,
+          "willSave" : 10,
+          "feats" : "Ki strike adamantine; Slow fall 80ft",
+          "unarmoredSpeed" : 50
+        },
+        "17" : {
+          "baseAttackBonus" : {
+            "armed" : "12/7/2",
+            "unarmed" : "+12/+12/+12/+7/+2"
+            },
+          "fortitudeSave" : 10,
+          "reflexSave" : 10,
+          "willSave" : 10,
+          "feats" : "Timeless body, Tongue of the sun and moon",
+          "unarmoredSpeed" : 50
+        },
+        "18" : {
+          "baseAttackBonus" : {
+            "armed" : "13/8/3",
+            "unarmed" : "+13/+13/+13/+8/+3"
+            },
+          "fortitudeSave" : 11,
+          "reflexSave" : 11,
+          "willSave" : 11,
+          "feats" : "Slow fall 90ft",
+          "unarmoredSpeed" : 60
+        },
+        "19" : {
+          "baseAttackBonus" : {
+            "armed" : "14/9/4",
+            "unarmed" : "+14/+14/+14/+9/+4"
+            },
+          "fortitudeSave" : 11,
+          "reflexSave" : 11,
+          "willSave" : 11,
+          "feats" : "Empty body",
+          "unarmoredSpeed" : 60
+        },
+        "20" : {
+          "baseAttackBonus" : {
+            "armed" : "15/10/5",
+            "unarmed" : "+15/+15/+15/+10/+5"
+            },
+          "fortitudeSave" : 12,
+          "reflexSave" : 12,
+          "willSave" : 12,
+          "feats" : "Perfect self; Slow fall any",
+          "unarmoredSpeed" : 60
         }  
       }
     },
-    "paladin" : {},
-    "ranger" : {},
-    "rogue" : {},
-    "sorcerer" : {},
-    "wizard" : {}
+    "paladin" : {
+      "weaponProficiency" : ["simple, martial"],
+      "armorProficiency" : ["heavy", "light", "medium", "shields and not Tower"],
+      "alignment" : "Lawful Good",
+      "hpByLevel" : "1d10",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(2 + int modifier) x 4",
+        "higherLevel" : "(2 + int modifier)"
+      },
+        "1" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 2,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Aura of good; Detect evil; Smite evil 1"
+        },
+        "2" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 3,
+          "reflexSave" : 0,
+          "willSave" : 0,
+          "feats" : "Divine grace; Lay on hands"
+        },
+        "3" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 3,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : "Aura of courage, divine health"
+        },
+        "4" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : "Turn undead",
+          "spellsPerDay" : {
+            "level" : [0]
+          }
+        },
+        "5" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 4,
+          "reflexSave" : 1,
+          "willSave" : 1,
+          "feats" : "Smite evil 2; Special mount",
+          "spellsPerDay" : {
+            "level" : [0]
+          }
+        },
+        "6" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : "Remove disease 1",
+          "spellsPerDay" : {
+            "level" : [1]
+          }
+        },
+        "7" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [1]
+          }
+        },
+        "8" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 6,
+          "reflexSave" : 2,
+          "willSave" : 2,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [1,0]
+          }
+        },
+        "9" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : "Remove disease 1",
+          "spellsPerDay" : {
+            "level" : [1,0]
+          }
+        },
+        "10" : {
+          "baseAttackBonus" : "10/5",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : "Smite evil 3",
+          "spellsPerDay" : {
+            "level" : [1,1]
+          }
+        },
+        "11" : {
+          "baseAttackBonus" : "11/6/1",
+          "fortitudeSave" : 7,
+          "reflexSave" : 3,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [1,1,0]
+          }
+        },
+        "12" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : "Remove disease 3",
+          "spellsPerDay" : {
+            "level" : [1,1,1]
+          }
+        },
+        "13" : {
+          "baseAttackBonus" : "13/8/3",
+          "fortitudeSave" : 8,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [1,1,1]
+          }
+        },
+        "14" : {
+          "baseAttackBonus" : "14/9/4",
+          "fortitudeSave" : 9,
+          "reflexSave" : 4,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [2,1,1,0]
+          }
+        },
+        "15" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 9,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : "Remove disease 4; Smite evil 4",
+          "spellsPerDay" : {
+            "level" : [2,1,1,1]
+          }
+        },
+        "16" : {
+          "baseAttackBonus" : "16/11/6/1",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [2,2,1,1]
+          }
+        },
+        "17" : {
+          "baseAttackBonus" : "17/12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [2,2,2,1]
+          }
+        },
+        "18" : {
+          "baseAttackBonus" : "18/13/8/3",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Remove dsease 5",
+          "spellsPerDay" : {
+            "level" : [3,2,2,1]
+          }
+        },
+        "19" : {
+          "baseAttackBonus" : "19/14/9/4",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [3,3,3,2]
+          }
+        },
+        "20" : {
+          "baseAttackBonus" : "20/15/10/5",
+          "fortitudeSave" : 12,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Smite evil 5",
+          "spellsPerDay" : {
+            "level" : [3,3,3,3]
+          }
+        }
+    },
+    "ranger" : {
+      "weaponProficiency" : ["simple, martial"],
+      "armorProficiency" : ["light", "shields and not Tower"],
+      "alignment" : [        
+        "Lawful Good",
+        "Lawful",
+        "Lawful Evil",
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+        ],
+      "hpByLevel" : "1d8",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(6 + int modifier) x 4",
+        "higherLevel" : "(6 + int modifier)"
+      },
+        "1" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 0,
+          "feats" : "1st favored enemy; Track; Wild empathy"
+        },
+        "2" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 0,
+          "feats" : "Combat Style"
+        },
+        "3" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 1,
+          "feats" : "Endurance"
+        },
+        "4" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 1,
+          "feats" : "Animal companion",
+          "spellsPerDay" : {
+            "level" : [0]
+          }
+        },
+        "5" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 1,
+          "feats" : "2nd favored enemy",
+          "spellsPerDay" : {
+            "level" : [0]
+          }
+        },
+        "6" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 2,
+          "feats" : "Improved combat style",
+          "spellsPerDay" : {
+            "level" : [1]
+          }
+        },
+        "7" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 2,
+          "feats" : "Woodland strike",
+          "spellsPerDay" : {
+            "level" : [1]
+          }
+        },
+        "8" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 2,
+          "feats" : "Swift tracker",
+          "spellsPerDay" : {
+            "level" : [1,0]
+          }
+        },
+        "9" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 3,
+          "feats" : "Evasion",
+          "spellsPerDay" : {
+            "level" : [1,0]
+          }
+        },
+        "10" : {
+          "baseAttackBonus" : "10/5",
+          "fortitudeSave" : 7,
+          "reflexSave" : 7,
+          "willSave" : 3,
+          "feats" : "3rd favored enemy",
+          "spellsPerDay" : {
+            "level" : [1,1]
+          }
+        },
+        "11" : {
+          "baseAttackBonus" : "11/6/1",
+          "fortitudeSave" : 7,
+          "reflexSave" : 7,
+          "willSave" : 3,
+          "feats" : "Combat style mastery",
+          "spellsPerDay" : {
+            "level" : [1,1,0]
+          }
+        },
+        "12" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 8,
+          "reflexSave" : 8,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [1,1,1]
+          }
+        },
+        "13" : {
+          "baseAttackBonus" : "13/8/3",
+          "fortitudeSave" : 8,
+          "reflexSave" : 8,
+          "willSave" : 4,
+          "feats" : "Camoflage",
+          "spellsPerDay" : {
+            "level" : [1,1,1]
+          }
+        },
+        "14" : {
+          "baseAttackBonus" : "14/9/4",
+          "fortitudeSave" : 9,
+          "reflexSave" : 9,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [2,1,1,0]
+          }
+        },
+        "15" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 9,
+          "reflexSave" : 9,
+          "willSave" : 5,
+          "feats" : "4th favored enemy",
+          "spellsPerDay" : {
+            "level" : [2,1,1,1]
+          }
+        },
+        "16" : {
+          "baseAttackBonus" : "16/11/6/1",
+          "fortitudeSave" : 10,
+          "reflexSave" : 10,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [2,2,1,1]
+          }
+        },
+        "17" : {
+          "baseAttackBonus" : "17/12/7/2",
+          "fortitudeSave" : 10,
+          "reflexSave" : 5,
+          "willSave" : 5,
+          "feats" : "Hide in plain sight",
+          "spellsPerDay" : {
+            "level" : [2,2,2,1]
+          }
+        },
+        "18" : {
+          "baseAttackBonus" : "18/13/8/3",
+          "fortitudeSave" : 11,
+          "reflexSave" : 11,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [3,2,2,1]
+          }
+        },
+        "19" : {
+          "baseAttackBonus" : "19/14/9/4",
+          "fortitudeSave" : 11,
+          "reflexSave" : 11,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [3,3,3,2]
+          }
+        },
+        "20" : {
+          "baseAttackBonus" : "20/15/10/5",
+          "fortitudeSave" : 12,
+          "reflexSave" : 12,
+          "willSave" : 6,
+          "feats" : "5th favored enemy",
+          "spellsPerDay" : {
+            "level" : [3,3,3,3]
+          }
+        }
+    },
+    "rogue" : {
+      "alignment" : [        
+        "Lawful Good",
+        "Lawful",
+        "Lawful Evil",
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+      ],
+      "weaponProficiency" : ["simple", "hand-crossbow", "rapier", "sap", "shortbow", "shortsword"],
+      "armorProficiency" : "light",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(8 + int modifier) x 4",
+        "higherLevel" : "(8 + int modifier)"
+      },
+      "hpByLevel" : "1d6",
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : 0,
+          "fortitudeSave" : 0,
+          "reflexSave" : 2,
+          "willSave" : 0,
+          "feats" : "Sneak attack +1d6; Trapfinding"
+        },
+        "2" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 0,
+          "reflexSave" : 3,
+          "willSave" : 0,
+          "feats" : "Evasion"
+        },
+        "3" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 1,
+          "reflexSave" : 3,
+          "willSave" : 1,
+          "feats" : "Sneak attack +2d6; trap sense +1"
+        },
+        "4" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 1,
+          "reflexSave" : 4,
+          "willSave" : 1,
+          "feats" : "Uncanny dodge"
+        },
+        "5" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 1,
+          "reflexSave" : 4,
+          "willSave" : 1,
+          "feats" : "Sneak attack +3d6"
+        },
+        "6" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 2,
+          "reflexSave" : 5,
+          "willSave" : 2,
+          "feats" : "Trap sense +2"
+        },
+        "7" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 2,
+          "reflexSave" : 5,
+          "willSave" : 2,
+          "feats" : "Sneak attack +4d6"
+        },
+        "8" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 2,
+          "reflexSave" : 6,
+          "willSave" : 2,
+          "feats" : "Improved uncanny dodge"
+        },
+        "9" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 3,
+          "reflexSave" : 6,
+          "willSave" : 3,
+          "feats" : "Sneak attack 5d6; Trap sense 3"
+        },
+        "10" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 3,
+          "reflexSave" : 7,
+          "willSave" : 3,
+          "feats" : "Special ability"
+        },
+        "11" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 3,
+          "reflexSave" : 7,
+          "willSave" : 3,
+          "feats" : "Sneak attack +6d6"
+        },
+        "12" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 4,
+          "reflexSave" : 8,
+          "willSave" : 4,
+          "feats" : "Trap sense +4"
+        },
+        "13" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 4,
+          "reflexSave" : 8,
+          "willSave" : 4,
+          "feats" : "Sneak attack +7d6; Special ability"
+        },
+        "14" : {
+          "baseAttackBonus" : "10/5",
+          "fortitudeSave" : 4,
+          "reflexSave" : 9,
+          "willSave" : 4,
+          "feats" : null
+        },
+        "15" : {
+          "baseAttackBonus" : "11/6/1",
+          "fortitudeSave" : 5,
+          "reflexSave" : 9,
+          "willSave" : 5,
+          "feats" : "Sneak attack +8d6"
+        },
+        "16" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 10,
+          "willSave" : 5,
+          "feats" : "Special ability"
+        },
+        "17" : {
+          "baseAttackBonus" : "12/7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 10,
+          "willSave" : 5,
+          "feats" : "Sneak attack +9d6"
+        },
+        "18" : {
+          "baseAttackBonus" : "13/8/3",
+          "fortitudeSave" : 6,
+          "reflexSave" : 11,
+          "willSave" : 6,
+          "feats" : "Trap sense +6"
+        },
+        "19" : {
+          "baseAttackBonus" : "14/9/4",
+          "fortitudeSave" : 11,
+          "reflexSave" : 6,
+          "willSave" : 6,
+          "feats" : "Sneak attack +10d6; Special ability"
+        },
+        "20" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 6,
+          "reflexSave" : 12,
+          "willSave" : 6,
+          "feats" : null
+        }
+      }
+    },
+    "sorcerer" : {
+      "weaponProficiency" : "simple",
+      "armorProficiency" : null,
+      "alignment" : [        
+        "Lawful Good",
+        "Lawful",
+        "Lawful Evil",
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+      ],
+      "hpByLevel" : "1d4",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(2 + int modifier) x 4",
+        "higherLevel" : "(2 + int modifier)"
+      },
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : 0,
+          "fortitudeSave" : 0,
+          "reflexSave" : 0,
+          "willSave" : 2,
+          "feats" : "Summon familiar",
+          "spellsPerDay" : {
+            "level" : [5,3]
+          },
+          "spellsKnown" : {
+            "level" : [4,2]
+          }
+        },
+        "2" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 0,
+          "reflexSave" : 0,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,4]
+          },
+          "spellsKnown" : {
+            "level" : [5,2]
+          }
+        },
+        "3" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 1,
+          "reflexSave" : 1,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,5]
+          },
+          "spellsKnown" : {
+            "level" : [5,3]
+          }
+        },
+        "4" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 1,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,3]
+          },
+          "spellsKnown" : {
+            "level" : [6,3,1]
+          }
+        },
+        "5" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 1,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [6,4,2]
+          }
+        },
+        "6" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [7,4,2,1]
+          }
+        },
+        "7" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [7,5,3,2]
+          }
+        },
+        "8" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [8,5,3,2,1]
+          }
+        },
+        "9" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [8,5,4,3,2]
+          }
+        },
+        "10" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,4,3,2,1]
+          }
+        },
+        "11" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,3,2]
+          }
+        },
+        "12" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,3,2,1]
+          }
+        },
+        "13" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,3,2]
+          }
+        },
+        "14" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 9,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,3,2,1]
+          }
+        },
+        "15" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 9,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,4,3,2]
+          }
+        },
+        "16" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,4,3,2,1]
+          }
+        },
+        "17" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,4,3,3,2]
+          }
+        },
+        "18" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,6,6,5,3]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,4,3,3,2,1]
+          }
+        },
+        "19" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,6,6,6,4]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,4,3,3,3,2]
+          }
+        },
+        "20" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 6,
+          "reflexSave" : 12,
+          "willSave" : 12,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [6,6,6,6,6,6,6,6,6,6]
+          },
+          "spellsKnown" : {
+            "level" : [9,5,5,4,4,4,3,3,3,3]
+          }
+        }
+      }
+    },
+    "wizard" : {
+      "weaponProficiency" : ["club", "dagger", "heavy-crossbow", "light-crossbow", "quarterstaff"],
+      "armorProficiency" : null,
+      "alignment" : [        
+        "Lawful Good",
+        "Lawful",
+        "Lawful Evil",
+        "Neutral Good",
+        "Neutral",
+        "Neutral Evil",
+        "Chaotic Good",
+        "Chaotic",
+        "Chaotic Evil"
+      ],
+      "hpByLevel" : "1d4",
+      "unarmedDamage" : "1d3",
+      "skillPoints" : {
+        "firstLevel" : "(2 + int modifier) x 4",
+        "higherLevel" : "(2 + int modifier)"
+      },
+      "level" : {
+        "1" : {
+          "baseAttackBonus" : 0,
+          "fortitudeSave" : 0,
+          "reflexSave" : 0,
+          "willSave" : 2,
+          "feats" : "Summon familiar; Scribe scroll",
+          "spellsPerDay" : {
+            "level" : [3,1]
+          }
+        },
+        "2" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 0,
+          "reflexSave" : 0,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,2]
+          }
+        },
+        "3" : {
+          "baseAttackBonus" : 1,
+          "fortitudeSave" : 1,
+          "reflexSave" : 1,
+          "willSave" : 3,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,2,1]
+          }
+        },
+        "4" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 1,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,3,2]
+          }
+        },
+        "5" : {
+          "baseAttackBonus" : 2,
+          "fortitudeSave" : 1,
+          "reflexSave" : 1,
+          "willSave" : 4,
+          "feats" : "Bonus feat",
+          "spellsPerDay" : {
+            "level" : [4,3,2,1]
+          }
+        },
+        "6" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,3,3,2]
+          }
+        },
+        "7" : {
+          "baseAttackBonus" : 3,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 5,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,3,2,1]
+          }
+        },
+        "8" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 2,
+          "reflexSave" : 2,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,3,3,2]
+          }
+        },
+        "9" : {
+          "baseAttackBonus" : 4,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 6,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,3,2,1]
+          }
+        },
+        "10" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : "Bonus feat",
+          "spellsPerDay" : {
+            "level" : [4,4,4,3,3,2]
+          }
+        },
+        "11" : {
+          "baseAttackBonus" : 5,
+          "fortitudeSave" : 3,
+          "reflexSave" : 3,
+          "willSave" : 7,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,3,2,1]
+          }
+        },
+        "12" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,3,3,2]
+          }
+        },
+        "13" : {
+          "baseAttackBonus" : "6/1",
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 8,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,3,2,1]
+          }
+        },
+        "14" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 4,
+          "reflexSave" : 4,
+          "willSave" : 9,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,3,3,2]
+          }
+        },
+        "15" : {
+          "baseAttackBonus" : "7/2",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 9,
+          "feats" : "Bonus feat",
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,4,3,2,1]
+          }
+        },
+        "16" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,4,3,3,2]
+          }
+        },
+        "17" : {
+          "baseAttackBonus" : "8/3",
+          "fortitudeSave" : 5,
+          "reflexSave" : 5,
+          "willSave" : 10,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,4,4,3,2,1]
+          }
+        },
+        "18" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,4,4,3,3,2]
+          }
+        },
+        "19" : {
+          "baseAttackBonus" : "9/4",
+          "fortitudeSave" : 6,
+          "reflexSave" : 6,
+          "willSave" : 11,
+          "feats" : null,
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,4,4,4,3,3]
+          }
+        },
+        "20" : {
+          "baseAttackBonus" : "15/10/5",
+          "fortitudeSave" : 6,
+          "reflexSave" : 12,
+          "willSave" : 12,
+          "feats" : "Bonus feat",
+          "spellsPerDay" : {
+            "level" : [4,4,4,4,4,4,4,4,4,4]
+          }
+        }
+      }
+    }
   },
   "characters" : [
     {
