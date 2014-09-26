@@ -136,8 +136,9 @@
       "favoriteClasses" : ["wizard"]
     }
   },
-  "classes" : {
-    "barbarian" : {
+  "classes" : [
+    {
+      "name": "barbarian",
       "alignment" : [
         "Neutral Good",
         "Neutral",
@@ -297,7 +298,8 @@
         }
       }
     },
-    "bard" : {
+    {
+      "name": "bard",
       "weaponProficiency" : ["simple", "longsword", "rapier", "sap", "shortsword", "shortbow", "whip"],
       "armorProficiency" : ["light", "shield (not tower)"],
       "alignment" : [
@@ -577,7 +579,8 @@
         }
       }
     },
-    "cleric" : {
+    {
+      "name": "cleric",
       "weaponProficiency" : ["simple"],
       "armorProficiency" : ["light", "medium", "heavy", "shield (not tower)"],
       "favoriteWeapon" : ["Every Deity has a favorite weapon and every cleric considers it a point of pride to yeild that weapon. A cleric who choses the war-domain recieves the 'Weapon Focus Feat' related to that weapon as a bonus feat. He also recieves the appropriate matial weapon proficiency feat as a bonus feat if the weapon falls into that category."],
@@ -791,7 +794,8 @@
         }
       }
     },
-    "druid" : {
+    {
+      "name": "druid",
       "weaponProficiency" : ["clug", "dagger", "dart", "quarterstaff", "scimitar", "sickle", "short-spear", "sling", "spear", "natural attacks"],
       "armorProficiency" : ["light", "medium", "No Metal Armor - only padded, leather or hide", "shields (only wooden) and not Tower"],
       "alignment" : [
@@ -1008,7 +1012,8 @@
           }
         }
     },
-    "fighter" : {
+    {
+      "name": "fighter",
       "weaponProficiency" : ["simple", "martial"],
       "armorProficiency" : ["light", "medium", "heavy", "Shields including Tower Shields"],
       "alignment" : [
@@ -1171,7 +1176,8 @@
         }
       }
     },
-    "monk" : {
+    {
+      "name": "monk",
       "weaponProficiency" : ["club", "light crossbow", "heavy crossbow", "dagger", "handaxe", "javelin", "kama", "nunchaku", "quarterstaff", "sai", "shuriken", "siangham", "sling"],
       "armorProficiency" : ["Not proficient with any armor or shields"],
       "alignment" : [
@@ -1408,7 +1414,8 @@
         }  
       }
     },
-    "paladin" : {
+    {
+      "name": "paladin",
       "weaponProficiency" : ["simple, martial"],
       "armorProficiency" : ["heavy", "light", "medium", "shields and not Tower"],
       "alignment" : "Lawful Good",
@@ -1610,7 +1617,8 @@
           }
         }
     },
-    "ranger" : {
+    {
+      "name": "ranger",
       "weaponProficiency" : ["simple, martial"],
       "armorProficiency" : ["light", "shields and not Tower"],
       "alignment" : [        
@@ -1822,7 +1830,8 @@
           }
         }
     },
-    "rogue" : {
+    {
+      "name": "rogue",
       "alignment" : [        
         "Lawful Good",
         "Lawful",
@@ -1985,7 +1994,8 @@
         }
       }
     },
-    "sorcerer" : {
+    {
+      "name": "sorcerer",
       "weaponProficiency" : "simple",
       "armorProficiency" : null,
       "alignment" : [        
@@ -2268,7 +2278,8 @@
         }
       }
     },
-    "wizard" : {
+    {
+      "name": "wizard",
       "weaponProficiency" : ["club", "dagger", "heavy-crossbow", "light-crossbow", "quarterstaff"],
       "armorProficiency" : null,
       "alignment" : [        
@@ -2491,7 +2502,7 @@
         }
       }
     }
-  },
+  ],
   "characters" : [
     {
       "traits" : {

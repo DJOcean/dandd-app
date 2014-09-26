@@ -5,5 +5,5 @@ angular.module('dnd', [
   'services.class'
  ])
 
-.value('fbURL', 'https://d-and-d.firebaseio.com/0/');
+.value('fbURL', 'https://d-and-d.firebaseio.com/');
         

@@ -1,0 +1,12 @@
+<div class="main-content-wrapper char-classes-wrapper">
+  <a ui-sref="default.characterSheet">&gt; back to Character Sheet</a>
+  <p>Current Class: {{currentClass}}</p>
+  <div ng-repeat="class in classCollection" ng-if="class.name === currentClass">
+    <div ng-if="class">
+    <h1>{{class.name}}</h1>
+    <h2>Alignment</h2>
+    <ul ng-repeat="type in class.alignment">
+      <li>{{type}}</li>
+    </ul></h2>
+  </div>
+</div>

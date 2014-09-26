@@ -19,18 +19,13 @@ angular.module('dnd.characterSheet', [
   .controller('CharacterSheetCtrl', function(
     $scope, $location, CharacterService, ClassService){ 
       $scope.Math = window.Math;
-      $scope.CharacterInformation = {};
+      $scope.CharacterInformation = CharacterService.$child(0);
+      console.log($scope.CharacterInformation);
 
-      $scope.getCharacter = function() {
-        CharacterService(0).$asObject().$loaded().then(function() {
-          console.log("loaded record", obj.$id, obj.someOtherKeyInData);
-        });
+      $scope.setBaseAttackBonus = function() {
+        // needs to be dynamic
+        $scope.classInfo = ClassService();
       };
 
-      $scope.setBaseAttackBonus = function(obj) {
-        console.log(obj);
-        $scope.classInfo = ClassService('barbarian', 1);
-      };
-
-      $scope.getCharacter();
+      console.log(ClassService());
   });

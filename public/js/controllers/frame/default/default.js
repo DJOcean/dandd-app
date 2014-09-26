@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('dnd.default', [
-  'dnd.characterSheet'
+  'dnd.characterSheet',
+  'dnd.classes',
+  'services.Character'
 ])
 
   .config(function($stateProvider, $urlRouterProvider, $locationProvider){
